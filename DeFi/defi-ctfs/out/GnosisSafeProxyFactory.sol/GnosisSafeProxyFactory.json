@@ -1,0 +1,4119 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        }
+      ],
+      "name": "ProxyCreation",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateCreateProxyWithNonceAddress",
+      "outputs": [
+        {
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "createProxy",
+      "outputs": [
+        {
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract IProxyCreationCallback",
+          "name": "callback",
+          "type": "address"
+        }
+      ],
+      "name": "createProxyWithCallback",
+      "outputs": [
+        {
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "createProxyWithNonce",
+      "outputs": [
+        {
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxyCreationCode",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxyRuntimeCode",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610a13806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80631688f0b9146100675780632500510e1461009757806353e5d935146100aa57806361b69abd146100bf578063addacc0f146100d2578063d18af54d146100da575b600080fd5b61007a61007536600461057b565b6100ed565b6040516001600160a01b0390911681526020015b60405180910390f35b61007a6100a53660046105d4565b610168565b6100b26101fd565b60405161008e91906106bb565b61007a6100cd3660046106d5565b610227565b6100b26102d0565b61007a6100e8366004610725565b6102e2565b60006100fa8484846103b8565b83519091501561011e5760008060008551602087016000865af10361011e57600080fd5b604080516001600160a01b038084168252861660208201527f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235910160405180910390a19392505050565b60006101ac8585858080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152508792506103b8915050565b6040516bffffffffffffffffffffffff19606083901b16602082015290915060340160408051601f198184030181529082905262461bcd60e51b82526101f4916004016106bb565b60405180910390fd5b60606040518060200161020f906104a7565b601f1982820381018352601f90910116604052919050565b600082604051610236906104a7565b6001600160a01b039091168152602001604051809103906000f080158015610262573d6000803e3d6000fd5b508251909150156102875760008060008451602086016000865af10361028757600080fd5b604080516001600160a01b038084168252851660208201527f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235910160405180910390a192915050565b60606040518060200161020f906104b4565b600080838360405160200161031392919091825260601b6bffffffffffffffffffffffff1916602082015260340190565b6040516020818303038152906040528051906020012060001c90506103398686836100ed565b91506001600160a01b038316156103af576040516303ca56a360e31b81526001600160a01b03841690631e52b5189061037c9085908a908a908a90600401610791565b600060405180830381600087803b15801561039657600080fd5b505af11580156103aa573d6000803e3d6000fd5b505050505b50949350505050565b6000808380519060200120836040516020016103de929190918252602082015260400190565b604051602081830303815290604052805190602001209050600060405180602001610408906104a7565b601f1982820381018352601f90910116604081905261043591906001600160a01b038916906020016107ce565b6040516020818303038152906040529050818151826020016000f592506001600160a01b03831661049e5760405162461bcd60e51b815260206004820152601360248201527210dc99585d194c8818d85b1b0819985a5b1959606a1b60448201526064016101f4565b50509392505050565b610172806107f183390190565b607b8061096383390190565b6001600160a01b03811681146104d557600080fd5b50565b634e487b7160e01b600052604160045260246000fd5b600082601f8301126104ff57600080fd5b813567ffffffffffffffff8082111561051a5761051a6104d8565b604051601f8301601f19908116603f01168101908282118183101715610542576105426104d8565b8160405283815286602085880101111561055b57600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561059057600080fd5b833561059b816104c0565b9250602084013567ffffffffffffffff8111156105b757600080fd5b6105c3868287016104ee565b925050604084013590509250925092565b600080600080606085870312156105ea57600080fd5b84356105f5816104c0565b9350602085013567ffffffffffffffff8082111561061257600080fd5b818701915087601f83011261062657600080fd5b81358181111561063557600080fd5b88602082850101111561064757600080fd5b95986020929092019750949560400135945092505050565b60005b8381101561067a578181015183820152602001610662565b83811115610689576000848401525b50505050565b600081518084526106a781602086016020860161065f565b601f01601f19169290920160200192915050565b6020815260006106ce602083018461068f565b9392505050565b600080604083850312156106e857600080fd5b82356106f3816104c0565b9150602083013567ffffffffffffffff81111561070f57600080fd5b61071b858286016104ee565b9150509250929050565b6000806000806080858703121561073b57600080fd5b8435610746816104c0565b9350602085013567ffffffffffffffff81111561076257600080fd5b61076e878288016104ee565b935050604085013591506060850135610786816104c0565b939692955090935050565b6001600160a01b038581168252841660208201526080604082018190526000906107bd9083018561068f565b905082606083015295945050505050565b600083516107e081846020880161065f565b919091019182525060200191905056fe608060405234801561001057600080fd5b5060405161017238038061017283398101604081905261002f916100b9565b6001600160a01b0381166100945760405162461bcd60e51b815260206004820152602260248201527f496e76616c69642073696e676c65746f6e20616464726573732070726f766964604482015261195960f21b606482015260840160405180910390fd5b600080546001600160a01b0319166001600160a01b03929092169190911790556100e9565b6000602082840312156100cb57600080fd5b81516001600160a01b03811681146100e257600080fd5b9392505050565b607b806100f76000396000f3fe6080604052600080546001600160a01b0316632cf35bc960e11b823501602757808252602082f35b3682833781823684845af490503d82833e806040573d82fd5b503d81f3fea26469706673582212206c159bc43a33e9993521149a91073fdbb26f3f90fb33803a0ec69dbd199a633c64736f6c634300080f00336080604052600080546001600160a01b0316632cf35bc960e11b823501602757808252602082f35b3682833781823684845af490503d82833e806040573d82fd5b503d81f3fea26469706673582212206c159bc43a33e9993521149a91073fdbb26f3f90fb33803a0ec69dbd199a633c64736f6c634300080f0033a264697066735822122083a088b66e4a44ce709a8882931d1519f855b2a2dd66b619d910abbb3297abad64736f6c634300080f0033",
+    "sourceMap": "332:5600:70:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80631688f0b9146100675780632500510e1461009757806353e5d935146100aa57806361b69abd146100bf578063addacc0f146100d2578063d18af54d146100da575b600080fd5b61007a61007536600461057b565b6100ed565b6040516001600160a01b0390911681526020015b60405180910390f35b61007a6100a53660046105d4565b610168565b6100b26101fd565b60405161008e91906106bb565b61007a6100cd3660046106d5565b610227565b6100b26102d0565b61007a6100e8366004610725565b6102e2565b60006100fa8484846103b8565b83519091501561011e5760008060008551602087016000865af10361011e57600080fd5b604080516001600160a01b038084168252861660208201527f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235910160405180910390a19392505050565b60006101ac8585858080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152508792506103b8915050565b6040516bffffffffffffffffffffffff19606083901b16602082015290915060340160408051601f198184030181529082905262461bcd60e51b82526101f4916004016106bb565b60405180910390fd5b60606040518060200161020f906104a7565b601f1982820381018352601f90910116604052919050565b600082604051610236906104a7565b6001600160a01b039091168152602001604051809103906000f080158015610262573d6000803e3d6000fd5b508251909150156102875760008060008451602086016000865af10361028757600080fd5b604080516001600160a01b038084168252851660208201527f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235910160405180910390a192915050565b60606040518060200161020f906104b4565b600080838360405160200161031392919091825260601b6bffffffffffffffffffffffff1916602082015260340190565b6040516020818303038152906040528051906020012060001c90506103398686836100ed565b91506001600160a01b038316156103af576040516303ca56a360e31b81526001600160a01b03841690631e52b5189061037c9085908a908a908a90600401610791565b600060405180830381600087803b15801561039657600080fd5b505af11580156103aa573d6000803e3d6000fd5b505050505b50949350505050565b6000808380519060200120836040516020016103de929190918252602082015260400190565b604051602081830303815290604052805190602001209050600060405180602001610408906104a7565b601f1982820381018352601f90910116604081905261043591906001600160a01b038916906020016107ce565b6040516020818303038152906040529050818151826020016000f592506001600160a01b03831661049e5760405162461bcd60e51b815260206004820152601360248201527210dc99585d194c8818d85b1b0819985a5b1959606a1b60448201526064016101f4565b50509392505050565b610172806107f183390190565b607b8061096383390190565b6001600160a01b03811681146104d557600080fd5b50565b634e487b7160e01b600052604160045260246000fd5b600082601f8301126104ff57600080fd5b813567ffffffffffffffff8082111561051a5761051a6104d8565b604051601f8301601f19908116603f01168101908282118183101715610542576105426104d8565b8160405283815286602085880101111561055b57600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561059057600080fd5b833561059b816104c0565b9250602084013567ffffffffffffffff8111156105b757600080fd5b6105c3868287016104ee565b925050604084013590509250925092565b600080600080606085870312156105ea57600080fd5b84356105f5816104c0565b9350602085013567ffffffffffffffff8082111561061257600080fd5b818701915087601f83011261062657600080fd5b81358181111561063557600080fd5b88602082850101111561064757600080fd5b95986020929092019750949560400135945092505050565b60005b8381101561067a578181015183820152602001610662565b83811115610689576000848401525b50505050565b600081518084526106a781602086016020860161065f565b601f01601f19169290920160200192915050565b6020815260006106ce602083018461068f565b9392505050565b600080604083850312156106e857600080fd5b82356106f3816104c0565b9150602083013567ffffffffffffffff81111561070f57600080fd5b61071b858286016104ee565b9150509250929050565b6000806000806080858703121561073b57600080fd5b8435610746816104c0565b9350602085013567ffffffffffffffff81111561076257600080fd5b61076e878288016104ee565b935050604085013591506060850135610786816104c0565b939692955090935050565b6001600160a01b038581168252841660208201526080604082018190526000906107bd9083018561068f565b905082606083015295945050505050565b600083516107e081846020880161065f565b919091019182525060200191905056fe608060405234801561001057600080fd5b5060405161017238038061017283398101604081905261002f916100b9565b6001600160a01b0381166100945760405162461bcd60e51b815260206004820152602260248201527f496e76616c69642073696e676c65746f6e20616464726573732070726f766964604482015261195960f21b606482015260840160405180910390fd5b600080546001600160a01b0319166001600160a01b03929092169190911790556100e9565b6000602082840312156100cb57600080fd5b81516001600160a01b03811681146100e257600080fd5b9392505050565b607b806100f76000396000f3fe6080604052600080546001600160a01b0316632cf35bc960e11b823501602757808252602082f35b3682833781823684845af490503d82833e806040573d82fd5b503d81f3fea26469706673582212206c159bc43a33e9993521149a91073fdbb26f3f90fb33803a0ec69dbd199a633c64736f6c634300080f00336080604052600080546001600160a01b0316632cf35bc960e11b823501602757808252602082f35b3682833781823684845af490503d82833e806040573d82fd5b503d81f3fea26469706673582212206c159bc43a33e9993521149a91073fdbb26f3f90fb33803a0ec69dbd199a633c64736f6c634300080f0033a264697066735822122083a088b66e4a44ce709a8882931d1519f855b2a2dd66b619d910abbb3297abad64736f6c634300080f0033",
+    "sourceMap": "332:5600:70:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3328:590;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;1730:32:123;;;1712:51;;1700:2;1685:18;3328:590:70;;;;;;;;5608:321;;;;;;:::i;:::-;;:::i;1580:124::-;;;:::i;:::-;;;;;;;:::i;689:472::-;;;;;;:::i;:::-;;:::i;1304:122::-;;;:::i;4463:520::-;;;;;;:::i;:::-;;:::i;3328:590::-;3473:21;3515:56;3536:10;3548:11;3561:9;3515:20;:56::i;:::-;3586:18;;3507:64;;-1:-1:-1;3586:22:70;3582:281;;3791:1;3787;3784;3770:11;3764:18;3757:4;3744:11;3740:22;3737:1;3730:5;3723;3718:71;3715:78;3712:136;;3827:1;3824;3817:12;3712:136;3878:32;;;-1:-1:-1;;;;;4745:15:123;;;4727:34;;4797:15;;4792:2;4777:18;;4770:43;3878:32:70;;4662:18:123;3878:32:70;;;;;;;3328:590;;;;;:::o;5608:321::-;5773:21;5815:56;5836:10;5848:11;;5815:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;5861:9:70;;-1:-1:-1;5815:20:70;;-1:-1:-1;;5815:56:70:i;:::-;5896:23;;-1:-1:-1;;5006:2:123;5002:15;;;4998:53;5896:23:70;;;4986:66:123;5807:64:70;;-1:-1:-1;5068:12:123;;5896:23:70;;;-1:-1:-1;;5896:23:70;;;;;;;;;;-1:-1:-1;;;5882:39:70;;;;;;;:::i;:::-;;;;;;;;1580:124;1630:12;1662:34;;;;;;;;:::i;:::-;-1:-1:-1;;1662:34:70;;;;;;;;;;;;;;;1580:124;-1:-1:-1;1580:124:70:o;689:472::-;764:21;826:9;806:30;;;;;:::i;:::-;-1:-1:-1;;;;;1730:32:123;;;1712:51;;1700:2;1685:18;806:30:70;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;851:11:70;;798:38;;-1:-1:-1;851:15:70;847:260;;1035:1;1031;1028;1021:4;1015:11;1008:4;1002;998:15;995:1;988:5;981;976:57;973:64;970:122;;1071:1;1068;1061:12;970:122;1122:31;;;-1:-1:-1;;;;;4745:15:123;;;4727:34;;4797:15;;4792:2;4777:18;;4770:43;1122:31:70;;4662:18:123;1122:31:70;;;;;;;689:472;;;;:::o;1304:122::-;1353:12;1385:33;;;;;;;;:::i;4463:520::-;4653:21;4687:29;4754:9;4765:8;4737:37;;;;;;;;5712:19:123;;;5769:2;5765:15;-1:-1:-1;;5761:53:123;5756:2;5747:12;;5740:75;5840:2;5831:12;;5523:326;4737:37:70;;;;;;;;;;;;;4727:48;;;;;;4719:57;;4687:89;;4795:68;4816:10;4828:11;4841:21;4795:20;:68::i;:::-;4787:76;-1:-1:-1;;;;;;4878:31:70;;;4874:101;;4911:64;;-1:-1:-1;;;4911:64:70;;-1:-1:-1;;;;;4911:21:70;;;;;:64;;4933:5;;4940:10;;4952:11;;4965:9;;4911:64;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4874:101;4676:307;4463:520;;;;;;:::o;2159:782::-;2306:21;2483:12;2535:11;2525:22;;;;;;2549:9;2508:51;;;;;;;;6537:19:123;;;6581:2;6572:12;;6565:28;6618:2;6609:12;;6380:247;2508:51:70;;;;;;;;;;;;;2498:62;;;;;;2483:77;;2571:27;2618:34;;;;;;;;:::i;:::-;-1:-1:-1;;2618:34:70;;;;;;;;;;;;;;;;2601:82;;2618:34;-1:-1:-1;;;;;2654:28:70;;;2618:34;2601:82;;:::i;:::-;;;;;;;;;;;;;2571:112;;2847:4;2830:14;2824:21;2807:14;2801:4;2797:25;2792:3;2784:68;2775:77;-1:-1:-1;;;;;;2881:28:70;;2873:60;;;;-1:-1:-1;;;2873:60:70;;7209:2:123;2873:60:70;;;7191:21:123;7248:2;7228:18;;;7221:30;-1:-1:-1;;;7267:18:123;;;7260:49;7326:18;;2873:60:70;7007:343:123;2873:60:70;2329:612;;2159:782;;;;;:::o;-1:-1:-1:-;;;;;;;;:::o;:::-;;;;;;;;:::o;14:131:123:-;-1:-1:-1;;;;;89:31:123;;79:42;;69:70;;135:1;132;125:12;69:70;14:131;:::o;150:127::-;211:10;206:3;202:20;199:1;192:31;242:4;239:1;232:15;266:4;263:1;256:15;282:718;324:5;377:3;370:4;362:6;358:17;354:27;344:55;;395:1;392;385:12;344:55;431:6;418:20;457:18;494:2;490;487:10;484:36;;;500:18;;:::i;:::-;575:2;569:9;543:2;629:13;;-1:-1:-1;;625:22:123;;;649:2;621:31;617:40;605:53;;;673:18;;;693:22;;;670:46;667:72;;;719:18;;:::i;:::-;759:10;755:2;748:22;794:2;786:6;779:18;840:3;833:4;828:2;820:6;816:15;812:26;809:35;806:55;;;857:1;854;847:12;806:55;921:2;914:4;906:6;902:17;895:4;887:6;883:17;870:54;968:1;961:4;956:2;948:6;944:15;940:26;933:37;988:6;979:15;;;;;;282:718;;;;:::o;1005:523::-;1091:6;1099;1107;1160:2;1148:9;1139:7;1135:23;1131:32;1128:52;;;1176:1;1173;1166:12;1128:52;1215:9;1202:23;1234:31;1259:5;1234:31;:::i;:::-;1284:5;-1:-1:-1;1340:2:123;1325:18;;1312:32;1367:18;1356:30;;1353:50;;;1399:1;1396;1389:12;1353:50;1422:49;1463:7;1454:6;1443:9;1439:22;1422:49;:::i;:::-;1412:59;;;1518:2;1507:9;1503:18;1490:32;1480:42;;1005:523;;;;;:::o;1774:794::-;1862:6;1870;1878;1886;1939:2;1927:9;1918:7;1914:23;1910:32;1907:52;;;1955:1;1952;1945:12;1907:52;1994:9;1981:23;2013:31;2038:5;2013:31;:::i;:::-;2063:5;-1:-1:-1;2119:2:123;2104:18;;2091:32;2142:18;2172:14;;;2169:34;;;2199:1;2196;2189:12;2169:34;2237:6;2226:9;2222:22;2212:32;;2282:7;2275:4;2271:2;2267:13;2263:27;2253:55;;2304:1;2301;2294:12;2253:55;2344:2;2331:16;2370:2;2362:6;2359:14;2356:34;;;2386:1;2383;2376:12;2356:34;2431:7;2426:2;2417:6;2413:2;2409:15;2405:24;2402:37;2399:57;;;2452:1;2449;2442:12;2399:57;1774:794;;2483:2;2475:11;;;;;-1:-1:-1;2505:6:123;;2558:2;2543:18;2530:32;;-1:-1:-1;1774:794:123;-1:-1:-1;;;1774:794:123:o;2573:258::-;2645:1;2655:113;2669:6;2666:1;2663:13;2655:113;;;2745:11;;;2739:18;2726:11;;;2719:39;2691:2;2684:10;2655:113;;;2786:6;2783:1;2780:13;2777:48;;;2821:1;2812:6;2807:3;2803:16;2796:27;2777:48;;2573:258;;;:::o;2836:257::-;2877:3;2915:5;2909:12;2942:6;2937:3;2930:19;2958:63;3014:6;3007:4;3002:3;2998:14;2991:4;2984:5;2980:16;2958:63;:::i;:::-;3075:2;3054:15;-1:-1:-1;;3050:29:123;3041:39;;;;3082:4;3037:50;;2836:257;-1:-1:-1;;2836:257:123:o;3098:217::-;3245:2;3234:9;3227:21;3208:4;3265:44;3305:2;3294:9;3290:18;3282:6;3265:44;:::i;:::-;3257:52;3098:217;-1:-1:-1;;;3098:217:123:o;3320:455::-;3397:6;3405;3458:2;3446:9;3437:7;3433:23;3429:32;3426:52;;;3474:1;3471;3464:12;3426:52;3513:9;3500:23;3532:31;3557:5;3532:31;:::i;:::-;3582:5;-1:-1:-1;3638:2:123;3623:18;;3610:32;3665:18;3654:30;;3651:50;;;3697:1;3694;3687:12;3651:50;3720:49;3761:7;3752:6;3741:9;3737:22;3720:49;:::i;:::-;3710:59;;;3320:455;;;;;:::o;3780:697::-;3907:6;3915;3923;3931;3984:3;3972:9;3963:7;3959:23;3955:33;3952:53;;;4001:1;3998;3991:12;3952:53;4040:9;4027:23;4059:31;4084:5;4059:31;:::i;:::-;4109:5;-1:-1:-1;4165:2:123;4150:18;;4137:32;4192:18;4181:30;;4178:50;;;4224:1;4221;4214:12;4178:50;4247:49;4288:7;4279:6;4268:9;4264:22;4247:49;:::i;:::-;4237:59;;;4343:2;4332:9;4328:18;4315:32;4305:42;;4399:2;4388:9;4384:18;4371:32;4412:33;4437:7;4412:33;:::i;:::-;3780:697;;;;-1:-1:-1;3780:697:123;;-1:-1:-1;;3780:697:123:o;5854:521::-;-1:-1:-1;;;;;6156:15:123;;;6138:34;;6208:15;;6203:2;6188:18;;6181:43;6260:3;6255:2;6240:18;;6233:31;;;6081:4;;6281:45;;6306:19;;6298:6;6281:45;:::i;:::-;6273:53;;6362:6;6357:2;6346:9;6342:18;6335:34;5854:521;;;;;;;:::o;6632:370::-;6789:3;6827:6;6821:13;6843:53;6889:6;6884:3;6877:4;6869:6;6865:17;6843:53;:::i;:::-;6918:16;;;;6943:21;;;-1:-1:-1;6991:4:123;6980:16;;6632:370;-1:-1:-1;6632:370:123:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "calculateCreateProxyWithNonceAddress(address,bytes,uint256)": "2500510e",
+    "createProxy(address,bytes)": "61b69abd",
+    "createProxyWithCallback(address,bytes,uint256,address)": "d18af54d",
+    "createProxyWithNonce(address,bytes,uint256)": "1688f0b9",
+    "proxyCreationCode()": "53e5d935",
+    "proxyRuntimeCode()": "addacc0f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"}],\"name\":\"ProxyCreation\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"calculateCreateProxyWithNonceAddress\",\"outputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"createProxy\",\"outputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"},{\"internalType\":\"contract IProxyCreationCallback\",\"name\":\"callback\",\"type\":\"address\"}],\"name\":\"createProxyWithCallback\",\"outputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"createProxyWithNonce\",\"outputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"proxyCreationCode\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"proxyRuntimeCode\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Stefan George - <stefan@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{\"calculateCreateProxyWithNonceAddress(address,bytes,uint256)\":{\"details\":\"Allows to get the address for a new proxy contact created via `createProxyWithNonce`      This method is only meant for address calculation purpose when you use an initializer that would revert,      therefore the response is returned with a revert. When calling this method set `from` to the address of the proxy factory.\",\"params\":{\"_singleton\":\"Address of singleton contract.\",\"initializer\":\"Payload for message call sent to new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"createProxy(address,bytes)\":{\"details\":\"Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\",\"params\":{\"data\":\"Payload for message call sent to new proxy contract.\",\"singleton\":\"Address of singleton contract.\"}},\"createProxyWithCallback(address,bytes,uint256,address)\":{\"details\":\"Allows to create new proxy contact, execute a message call to the new proxy and call a specified callback within one transaction\",\"params\":{\"_singleton\":\"Address of singleton contract.\",\"callback\":\"Callback that will be invoked after the new proxy contract has been successfully deployed and initialized.\",\"initializer\":\"Payload for message call sent to new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"createProxyWithNonce(address,bytes,uint256)\":{\"details\":\"Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\",\"params\":{\"_singleton\":\"Address of singleton contract.\",\"initializer\":\"Payload for message call sent to new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"proxyCreationCode()\":{\"details\":\"Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address.\"},\"proxyRuntimeCode()\":{\"details\":\"Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed.\"}},\"title\":\"Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol\":\"GnosisSafeProxyFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol\":{\"keccak256\":\"0xa926e53ca29ffb3c9648f7f104a5b99b58c798bc7f10df6188936648ef0c98ab\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://8dedc2722a13eba9d438df1ebb445acb90e2a98d4adc29069dc9579d18a687dc\",\"dweb:/ipfs/QmQu44bQwjEaJXWBKc7RXkAzVAwGoYZecwQCUWAmtatAtG\"]},\"lib/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol\":{\"keccak256\":\"0xd0d030903e9816bdd0590f2ba5daeaebac6ac658fe4e420958d47f65ec5a8c05\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://4c82fd8a960c0aa0da9e71c1234706e5295fa44f001c2e36e65eab891fc90eaa\",\"dweb:/ipfs/QmQ7DNnEtrzRd5nRJSyMTXhZV3JwZDijirp41zDdmhVxNB\"]},\"lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":{\"keccak256\":\"0x362621dfce76c5333e9cd130ca7b7c8c21d1f2a7d0c01f42f9f7f43cd1c70841\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://de3ee5307da8cbe631baac80a490362398e48b185a52d9957aceae22d1e0856a\",\"dweb:/ipfs/QmafaV3uJvau2rZAChREhs3WCn4RzsJvoHyAh2MbYdFZ9g\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "singleton",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ProxyCreation",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_singleton",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initializer",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "saltNonce",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "calculateCreateProxyWithNonceAddress",
+          "outputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "singleton",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createProxy",
+          "outputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_singleton",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initializer",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "saltNonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "contract IProxyCreationCallback",
+              "name": "callback",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createProxyWithCallback",
+          "outputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_singleton",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initializer",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "saltNonce",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createProxyWithNonce",
+          "outputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "proxyCreationCode",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "proxyRuntimeCode",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "calculateCreateProxyWithNonceAddress(address,bytes,uint256)": {
+            "details": "Allows to get the address for a new proxy contact created via `createProxyWithNonce`      This method is only meant for address calculation purpose when you use an initializer that would revert,      therefore the response is returned with a revert. When calling this method set `from` to the address of the proxy factory.",
+            "params": {
+              "_singleton": "Address of singleton contract.",
+              "initializer": "Payload for message call sent to new proxy contract.",
+              "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            }
+          },
+          "createProxy(address,bytes)": {
+            "details": "Allows to create new proxy contact and execute a message call to the new proxy within one transaction.",
+            "params": {
+              "data": "Payload for message call sent to new proxy contract.",
+              "singleton": "Address of singleton contract."
+            }
+          },
+          "createProxyWithCallback(address,bytes,uint256,address)": {
+            "details": "Allows to create new proxy contact, execute a message call to the new proxy and call a specified callback within one transaction",
+            "params": {
+              "_singleton": "Address of singleton contract.",
+              "callback": "Callback that will be invoked after the new proxy contract has been successfully deployed and initialized.",
+              "initializer": "Payload for message call sent to new proxy contract.",
+              "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            }
+          },
+          "createProxyWithNonce(address,bytes,uint256)": {
+            "details": "Allows to create new proxy contact and execute a message call to the new proxy within one transaction.",
+            "params": {
+              "_singleton": "Address of singleton contract.",
+              "initializer": "Payload for message call sent to new proxy contract.",
+              "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            }
+          },
+          "proxyCreationCode()": {
+            "details": "Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address."
+          },
+          "proxyRuntimeCode()": {
+            "details": "Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@safe/=lib/safe-contracts/",
+        ":@uniswapv2/=src/src-0_6_x/uniswapv2/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        ":safe-contracts/=lib/safe-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol": "GnosisSafeProxyFactory"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol": {
+        "keccak256": "0xa926e53ca29ffb3c9648f7f104a5b99b58c798bc7f10df6188936648ef0c98ab",
+        "urls": [
+          "bzz-raw://8dedc2722a13eba9d438df1ebb445acb90e2a98d4adc29069dc9579d18a687dc",
+          "dweb:/ipfs/QmQu44bQwjEaJXWBKc7RXkAzVAwGoYZecwQCUWAmtatAtG"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "lib/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol": {
+        "keccak256": "0xd0d030903e9816bdd0590f2ba5daeaebac6ac658fe4e420958d47f65ec5a8c05",
+        "urls": [
+          "bzz-raw://4c82fd8a960c0aa0da9e71c1234706e5295fa44f001c2e36e65eab891fc90eaa",
+          "dweb:/ipfs/QmQ7DNnEtrzRd5nRJSyMTXhZV3JwZDijirp41zDdmhVxNB"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
+        "keccak256": "0x362621dfce76c5333e9cd130ca7b7c8c21d1f2a7d0c01f42f9f7f43cd1c70841",
+        "urls": [
+          "bzz-raw://de3ee5307da8cbe631baac80a490362398e48b185a52d9957aceae22d1e0856a",
+          "dweb:/ipfs/QmafaV3uJvau2rZAChREhs3WCn4RzsJvoHyAh2MbYdFZ9g"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol",
+    "id": 34111,
+    "exportedSymbols": {
+      "GnosisSafeProxy": [
+        33863
+      ],
+      "GnosisSafeProxyFactory": [
+        34110
+      ],
+      "IProxy": [
+        33832
+      ],
+      "IProxyCreationCallback": [
+        34126
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "43:5891:70",
+    "nodes": [
+      {
+        "id": 33865,
+        "nodeType": "PragmaDirective",
+        "src": "43:31:70",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 33866,
+        "nodeType": "ImportDirective",
+        "src": "78:31:70",
+        "nodes": [],
+        "absolutePath": "lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol",
+        "file": "./GnosisSafeProxy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 34111,
+        "sourceUnit": 33864,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 33867,
+        "nodeType": "ImportDirective",
+        "src": "111:38:70",
+        "nodes": [],
+        "absolutePath": "lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol",
+        "file": "./IProxyCreationCallback.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 34111,
+        "sourceUnit": 34127,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 34110,
+        "nodeType": "ContractDefinition",
+        "src": "332:5600:70",
+        "nodes": [
+          {
+            "id": 33875,
+            "nodeType": "EventDefinition",
+            "src": "371:62:70",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235",
+            "name": "ProxyCreation",
+            "nameLocation": "377:13:70",
+            "parameters": {
+              "id": 33874,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33871,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "407:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33875,
+                  "src": "391:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 33870,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 33869,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "391:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "391:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33873,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "singleton",
+                  "nameLocation": "422:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33875,
+                  "src": "414:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33872,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:42:70"
+            }
+          },
+          {
+            "id": 33906,
+            "nodeType": "FunctionDefinition",
+            "src": "689:472:70",
+            "nodes": [],
+            "body": {
+              "id": 33905,
+              "nodeType": "Block",
+              "src": "787:374:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 33892,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 33886,
+                      "name": "proxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33884,
+                      "src": "798:5:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 33890,
+                          "name": "singleton",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33878,
+                          "src": "826:9:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 33889,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "806:19:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_GnosisSafeProxy_$33863_$",
+                          "typeString": "function (address) returns (contract GnosisSafeProxy)"
+                        },
+                        "typeName": {
+                          "id": 33888,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 33887,
+                            "name": "GnosisSafeProxy",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 33863,
+                            "src": "810:15:70"
+                          },
+                          "referencedDeclaration": 33863,
+                          "src": "810:15:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                            "typeString": "contract GnosisSafeProxy"
+                          }
+                        }
+                      },
+                      "id": 33891,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "806:30:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "src": "798:38:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "id": 33893,
+                  "nodeType": "ExpressionStatement",
+                  "src": "798:38:70"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 33897,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 33894,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33880,
+                        "src": "851:4:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      "id": 33895,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "851:11:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 33896,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "865:1:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "851:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 33899,
+                  "nodeType": "IfStatement",
+                  "src": "847:260:70",
+                  "trueBody": {
+                    "AST": {
+                      "nodeType": "YulBlock",
+                      "src": "951:156:70",
+                      "statements": [
+                        {
+                          "body": {
+                            "nodeType": "YulBlock",
+                            "src": "1038:54:70",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "arguments": [
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "1068:1:70",
+                                      "type": "",
+                                      "value": "0"
+                                    },
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "1071:1:70",
+                                      "type": "",
+                                      "value": "0"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "revert",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1061:6:70"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "1061:12:70"
+                                },
+                                "nodeType": "YulExpressionStatement",
+                                "src": "1061:12:70"
+                              }
+                            ]
+                          },
+                          "condition": {
+                            "arguments": [
+                              {
+                                "arguments": [
+                                  {
+                                    "arguments": [],
+                                    "functionName": {
+                                      "name": "gas",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "981:3:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "981:5:70"
+                                  },
+                                  {
+                                    "name": "proxy",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "988:5:70"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "995:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "data",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "1002:4:70"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "1008:4:70",
+                                        "type": "",
+                                        "value": "0x20"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "998:3:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "998:15:70"
+                                  },
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "data",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "1021:4:70"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "mload",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "1015:5:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "1015:11:70"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1028:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1031:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "call",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "976:4:70"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "976:57:70"
+                              },
+                              {
+                                "kind": "number",
+                                "nodeType": "YulLiteral",
+                                "src": "1035:1:70",
+                                "type": "",
+                                "value": "0"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "eq",
+                              "nodeType": "YulIdentifier",
+                              "src": "973:2:70"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "973:64:70"
+                          },
+                          "nodeType": "YulIf",
+                          "src": "970:122:70"
+                        }
+                      ]
+                    },
+                    "evmVersion": "london",
+                    "externalReferences": [
+                      {
+                        "declaration": 33880,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1002:4:70",
+                        "valueSize": 1
+                      },
+                      {
+                        "declaration": 33880,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1021:4:70",
+                        "valueSize": 1
+                      },
+                      {
+                        "declaration": 33884,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "988:5:70",
+                        "valueSize": 1
+                      }
+                    ],
+                    "id": 33898,
+                    "nodeType": "InlineAssembly",
+                    "src": "942:165:70"
+                  }
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 33901,
+                        "name": "proxy",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33884,
+                        "src": "1136:5:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                          "typeString": "contract GnosisSafeProxy"
+                        }
+                      },
+                      {
+                        "id": 33902,
+                        "name": "singleton",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33878,
+                        "src": "1143:9:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                          "typeString": "contract GnosisSafeProxy"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 33900,
+                      "name": "ProxyCreation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33875,
+                      "src": "1122:13:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_contract$_GnosisSafeProxy_$33863_$_t_address_$returns$__$",
+                        "typeString": "function (contract GnosisSafeProxy,address)"
+                      }
+                    },
+                    "id": 33903,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1122:31:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33904,
+                  "nodeType": "EmitStatement",
+                  "src": "1117:36:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 33876,
+              "nodeType": "StructuredDocumentation",
+              "src": "441:242:70",
+              "text": "@dev Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\n @param singleton Address of singleton contract.\n @param data Payload for message call sent to new proxy contract."
+            },
+            "functionSelector": "61b69abd",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createProxy",
+            "nameLocation": "698:11:70",
+            "parameters": {
+              "id": 33881,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33878,
+                  "mutability": "mutable",
+                  "name": "singleton",
+                  "nameLocation": "718:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33906,
+                  "src": "710:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33877,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33880,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "742:4:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33906,
+                  "src": "729:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 33879,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "709:38:70"
+            },
+            "returnParameters": {
+              "id": 33885,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33884,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "780:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33906,
+                  "src": "764:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 33883,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 33882,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "764:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "764:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "763:23:70"
+            },
+            "scope": 34110,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 33918,
+            "nodeType": "FunctionDefinition",
+            "src": "1304:122:70",
+            "nodes": [],
+            "body": {
+              "id": 33917,
+              "nodeType": "Block",
+              "src": "1367:59:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 33913,
+                          "name": "GnosisSafeProxy",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33863,
+                          "src": "1390:15:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                            "typeString": "type(contract GnosisSafeProxy)"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                            "typeString": "type(contract GnosisSafeProxy)"
+                          }
+                        ],
+                        "id": 33912,
+                        "name": "type",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -27,
+                        "src": "1385:4:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 33914,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1385:21:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_meta_type_t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "type(contract GnosisSafeProxy)"
+                      }
+                    },
+                    "id": 33915,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "runtimeCode",
+                    "nodeType": "MemberAccess",
+                    "src": "1385:33:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 33911,
+                  "id": 33916,
+                  "nodeType": "Return",
+                  "src": "1378:40:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 33907,
+              "nodeType": "StructuredDocumentation",
+              "src": "1169:129:70",
+              "text": "@dev Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed."
+            },
+            "functionSelector": "addacc0f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "proxyRuntimeCode",
+            "nameLocation": "1313:16:70",
+            "parameters": {
+              "id": 33908,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1329:2:70"
+            },
+            "returnParameters": {
+              "id": 33911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33910,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33918,
+                  "src": "1353:12:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 33909,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1353:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1352:14:70"
+            },
+            "scope": 34110,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 33930,
+            "nodeType": "FunctionDefinition",
+            "src": "1580:124:70",
+            "nodes": [],
+            "body": {
+              "id": 33929,
+              "nodeType": "Block",
+              "src": "1644:60:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 33925,
+                          "name": "GnosisSafeProxy",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33863,
+                          "src": "1667:15:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                            "typeString": "type(contract GnosisSafeProxy)"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                            "typeString": "type(contract GnosisSafeProxy)"
+                          }
+                        ],
+                        "id": 33924,
+                        "name": "type",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -27,
+                        "src": "1662:4:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 33926,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1662:21:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_meta_type_t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "type(contract GnosisSafeProxy)"
+                      }
+                    },
+                    "id": 33927,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "creationCode",
+                    "nodeType": "MemberAccess",
+                    "src": "1662:34:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 33923,
+                  "id": 33928,
+                  "nodeType": "Return",
+                  "src": "1655:41:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 33919,
+              "nodeType": "StructuredDocumentation",
+              "src": "1434:140:70",
+              "text": "@dev Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address."
+            },
+            "functionSelector": "53e5d935",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "proxyCreationCode",
+            "nameLocation": "1589:17:70",
+            "parameters": {
+              "id": 33920,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1606:2:70"
+            },
+            "returnParameters": {
+              "id": 33923,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33922,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33930,
+                  "src": "1630:12:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 33921,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1630:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1629:14:70"
+            },
+            "scope": 34110,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 33987,
+            "nodeType": "FunctionDefinition",
+            "src": "2159:782:70",
+            "nodes": [],
+            "body": {
+              "id": 33986,
+              "nodeType": "Block",
+              "src": "2329:612:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    33944
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33944,
+                      "mutability": "mutable",
+                      "name": "salt",
+                      "nameLocation": "2491:4:70",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33986,
+                      "src": "2483:12:70",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 33943,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2483:7:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33954,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 33949,
+                                "name": "initializer",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 33935,
+                                "src": "2535:11:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              ],
+                              "id": 33948,
+                              "name": "keccak256",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -8,
+                              "src": "2525:9:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                "typeString": "function (bytes memory) pure returns (bytes32)"
+                              }
+                            },
+                            "id": 33950,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2525:22:70",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          {
+                            "id": 33951,
+                            "name": "saltNonce",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 33937,
+                            "src": "2549:9:70",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 33946,
+                            "name": "abi",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -1,
+                            "src": "2508:3:70",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_abi",
+                              "typeString": "abi"
+                            }
+                          },
+                          "id": 33947,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "encodePacked",
+                          "nodeType": "MemberAccess",
+                          "src": "2508:16:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function () pure returns (bytes memory)"
+                          }
+                        },
+                        "id": 33952,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2508:51:70",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 33945,
+                      "name": "keccak256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -8,
+                      "src": "2498:9:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 33953,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2498:62:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2483:77:70"
+                },
+                {
+                  "assignments": [
+                    33956
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33956,
+                      "mutability": "mutable",
+                      "name": "deploymentData",
+                      "nameLocation": "2584:14:70",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33986,
+                      "src": "2571:27:70",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_memory_ptr",
+                        "typeString": "bytes"
+                      },
+                      "typeName": {
+                        "id": 33955,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2571:5:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33971,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 33960,
+                              "name": "GnosisSafeProxy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 33863,
+                              "src": "2623:15:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                                "typeString": "type(contract GnosisSafeProxy)"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_type$_t_contract$_GnosisSafeProxy_$33863_$",
+                                "typeString": "type(contract GnosisSafeProxy)"
+                              }
+                            ],
+                            "id": 33959,
+                            "name": "type",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -27,
+                            "src": "2618:4:70",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 33961,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2618:21:70",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_meta_type_t_contract$_GnosisSafeProxy_$33863",
+                            "typeString": "type(contract GnosisSafeProxy)"
+                          }
+                        },
+                        "id": 33962,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "creationCode",
+                        "nodeType": "MemberAccess",
+                        "src": "2618:34:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 33967,
+                                "name": "_singleton",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 33933,
+                                "src": "2670:10:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "id": 33966,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "2662:7:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint160_$",
+                                "typeString": "type(uint160)"
+                              },
+                              "typeName": {
+                                "id": 33965,
+                                "name": "uint160",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "2662:7:70",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 33968,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2662:19:70",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          ],
+                          "id": 33964,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "2654:7:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": {
+                            "id": 33963,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "2654:7:70",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 33969,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2654:28:70",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33957,
+                        "name": "abi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -1,
+                        "src": "2601:3:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_abi",
+                          "typeString": "abi"
+                        }
+                      },
+                      "id": 33958,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "encodePacked",
+                      "nodeType": "MemberAccess",
+                      "src": "2601:16:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function () pure returns (bytes memory)"
+                      }
+                    },
+                    "id": 33970,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2601:82:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2571:112:70"
+                },
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "2760:103:70",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "2775:77:70",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "2792:3:70",
+                              "type": "",
+                              "value": "0x0"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "2801:4:70",
+                                  "type": "",
+                                  "value": "0x20"
+                                },
+                                {
+                                  "name": "deploymentData",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2807:14:70"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "add",
+                                "nodeType": "YulIdentifier",
+                                "src": "2797:3:70"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "2797:25:70"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "name": "deploymentData",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2830:14:70"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "2824:5:70"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "2824:21:70"
+                            },
+                            {
+                              "name": "salt",
+                              "nodeType": "YulIdentifier",
+                              "src": "2847:4:70"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "create2",
+                            "nodeType": "YulIdentifier",
+                            "src": "2784:7:70"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "2784:68:70"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "proxy",
+                            "nodeType": "YulIdentifier",
+                            "src": "2775:5:70"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "london",
+                  "externalReferences": [
+                    {
+                      "declaration": 33956,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "2807:14:70",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 33956,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "2830:14:70",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 33941,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "2775:5:70",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 33944,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "2847:4:70",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 33972,
+                  "nodeType": "InlineAssembly",
+                  "src": "2751:112:70"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 33982,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [
+                            {
+                              "id": 33976,
+                              "name": "proxy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 33941,
+                              "src": "2889:5:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                                "typeString": "contract GnosisSafeProxy"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                                "typeString": "contract GnosisSafeProxy"
+                              }
+                            ],
+                            "id": 33975,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "2881:7:70",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 33974,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "2881:7:70",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 33977,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2881:14:70",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "hexValue": "30",
+                              "id": 33980,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "2907:1:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 33979,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "2899:7:70",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 33978,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "2899:7:70",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 33981,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2899:10:70",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "2881:28:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "437265617465322063616c6c206661696c6564",
+                        "id": 33983,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2911:21:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d7c71a0bdd2eb2834ad042153c811dd478e4ee2324e3003b9522e03e7b3735dc",
+                          "typeString": "literal_string \"Create2 call failed\""
+                        },
+                        "value": "Create2 call failed"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d7c71a0bdd2eb2834ad042153c811dd478e4ee2324e3003b9522e03e7b3735dc",
+                          "typeString": "literal_string \"Create2 call failed\""
+                        }
+                      ],
+                      "id": 33973,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2873:7:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 33984,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2873:60:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33985,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2873:60:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 33931,
+              "nodeType": "StructuredDocumentation",
+              "src": "1712:441:70",
+              "text": "@dev Allows to create new proxy contact using CREATE2 but it doesn't run the initializer.\n      This method is only meant as an utility to be called from other methods\n @param _singleton Address of singleton contract.\n @param initializer Payload for message call sent to new proxy contract.\n @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deployProxyWithNonce",
+            "nameLocation": "2168:20:70",
+            "parameters": {
+              "id": 33938,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33933,
+                  "mutability": "mutable",
+                  "name": "_singleton",
+                  "nameLocation": "2207:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33987,
+                  "src": "2199:18:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33932,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2199:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33935,
+                  "mutability": "mutable",
+                  "name": "initializer",
+                  "nameLocation": "2241:11:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33987,
+                  "src": "2228:24:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 33934,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2228:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33937,
+                  "mutability": "mutable",
+                  "name": "saltNonce",
+                  "nameLocation": "2271:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33987,
+                  "src": "2263:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 33936,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2263:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2188:99:70"
+            },
+            "returnParameters": {
+              "id": 33942,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33941,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "2322:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33987,
+                  "src": "2306:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 33940,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 33939,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "2306:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "2306:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2305:23:70"
+            },
+            "scope": 34110,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 34020,
+            "nodeType": "FunctionDefinition",
+            "src": "3328:590:70",
+            "nodes": [],
+            "body": {
+              "id": 34019,
+              "nodeType": "Block",
+              "src": "3496:422:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 34006,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 34000,
+                      "name": "proxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33998,
+                      "src": "3507:5:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 34002,
+                          "name": "_singleton",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33990,
+                          "src": "3536:10:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 34003,
+                          "name": "initializer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33992,
+                          "src": "3548:11:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "id": 34004,
+                          "name": "saltNonce",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33994,
+                          "src": "3561:9:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 34001,
+                        "name": "deployProxyWithNonce",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33987,
+                        "src": "3515:20:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$returns$_t_contract$_GnosisSafeProxy_$33863_$",
+                          "typeString": "function (address,bytes memory,uint256) returns (contract GnosisSafeProxy)"
+                        }
+                      },
+                      "id": 34005,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3515:56:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "src": "3507:64:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "id": 34007,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3507:64:70"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 34011,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 34008,
+                        "name": "initializer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33992,
+                        "src": "3586:11:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      "id": 34009,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "3586:18:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 34010,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "3607:1:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "3586:22:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 34013,
+                  "nodeType": "IfStatement",
+                  "src": "3582:281:70",
+                  "trueBody": {
+                    "AST": {
+                      "nodeType": "YulBlock",
+                      "src": "3693:170:70",
+                      "statements": [
+                        {
+                          "body": {
+                            "nodeType": "YulBlock",
+                            "src": "3794:54:70",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "arguments": [
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "3824:1:70",
+                                      "type": "",
+                                      "value": "0"
+                                    },
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "3827:1:70",
+                                      "type": "",
+                                      "value": "0"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "revert",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "3817:6:70"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "3817:12:70"
+                                },
+                                "nodeType": "YulExpressionStatement",
+                                "src": "3817:12:70"
+                              }
+                            ]
+                          },
+                          "condition": {
+                            "arguments": [
+                              {
+                                "arguments": [
+                                  {
+                                    "arguments": [],
+                                    "functionName": {
+                                      "name": "gas",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "3723:3:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "3723:5:70"
+                                  },
+                                  {
+                                    "name": "proxy",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "3730:5:70"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "3737:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "initializer",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "3744:11:70"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "3757:4:70",
+                                        "type": "",
+                                        "value": "0x20"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "3740:3:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "3740:22:70"
+                                  },
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "initializer",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "3770:11:70"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "mload",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "3764:5:70"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "3764:18:70"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "3784:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "3787:1:70",
+                                    "type": "",
+                                    "value": "0"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "call",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "3718:4:70"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "3718:71:70"
+                              },
+                              {
+                                "kind": "number",
+                                "nodeType": "YulLiteral",
+                                "src": "3791:1:70",
+                                "type": "",
+                                "value": "0"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "eq",
+                              "nodeType": "YulIdentifier",
+                              "src": "3715:2:70"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "3715:78:70"
+                          },
+                          "nodeType": "YulIf",
+                          "src": "3712:136:70"
+                        }
+                      ]
+                    },
+                    "evmVersion": "london",
+                    "externalReferences": [
+                      {
+                        "declaration": 33992,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3744:11:70",
+                        "valueSize": 1
+                      },
+                      {
+                        "declaration": 33992,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3770:11:70",
+                        "valueSize": 1
+                      },
+                      {
+                        "declaration": 33998,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3730:5:70",
+                        "valueSize": 1
+                      }
+                    ],
+                    "id": 34012,
+                    "nodeType": "InlineAssembly",
+                    "src": "3684:179:70"
+                  }
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 34015,
+                        "name": "proxy",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33998,
+                        "src": "3892:5:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                          "typeString": "contract GnosisSafeProxy"
+                        }
+                      },
+                      {
+                        "id": 34016,
+                        "name": "_singleton",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33990,
+                        "src": "3899:10:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                          "typeString": "contract GnosisSafeProxy"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 34014,
+                      "name": "ProxyCreation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33875,
+                      "src": "3878:13:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_contract$_GnosisSafeProxy_$33863_$_t_address_$returns$__$",
+                        "typeString": "function (contract GnosisSafeProxy,address)"
+                      }
+                    },
+                    "id": 34017,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3878:32:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34018,
+                  "nodeType": "EmitStatement",
+                  "src": "3873:37:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 33988,
+              "nodeType": "StructuredDocumentation",
+              "src": "2949:373:70",
+              "text": "@dev Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\n @param _singleton Address of singleton contract.\n @param initializer Payload for message call sent to new proxy contract.\n @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            },
+            "functionSelector": "1688f0b9",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createProxyWithNonce",
+            "nameLocation": "3337:20:70",
+            "parameters": {
+              "id": 33995,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33990,
+                  "mutability": "mutable",
+                  "name": "_singleton",
+                  "nameLocation": "3376:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34020,
+                  "src": "3368:18:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33989,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3368:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33992,
+                  "mutability": "mutable",
+                  "name": "initializer",
+                  "nameLocation": "3410:11:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34020,
+                  "src": "3397:24:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 33991,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3397:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33994,
+                  "mutability": "mutable",
+                  "name": "saltNonce",
+                  "nameLocation": "3440:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34020,
+                  "src": "3432:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 33993,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3432:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3357:99:70"
+            },
+            "returnParameters": {
+              "id": 33999,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33998,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "3489:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34020,
+                  "src": "3473:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 33997,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 33996,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "3473:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "3473:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3472:23:70"
+            },
+            "scope": 34110,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 34077,
+            "nodeType": "FunctionDefinition",
+            "src": "4463:520:70",
+            "nodes": [],
+            "body": {
+              "id": 34076,
+              "nodeType": "Block",
+              "src": "4676:307:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    34037
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 34037,
+                      "mutability": "mutable",
+                      "name": "saltNonceWithCallback",
+                      "nameLocation": "4695:21:70",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 34076,
+                      "src": "4687:29:70",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 34036,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4687:7:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 34048,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 34043,
+                                "name": "saltNonce",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 34027,
+                                "src": "4754:9:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              {
+                                "id": 34044,
+                                "name": "callback",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 34030,
+                                "src": "4765:8:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                                  "typeString": "contract IProxyCreationCallback"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                                  "typeString": "contract IProxyCreationCallback"
+                                }
+                              ],
+                              "expression": {
+                                "id": 34041,
+                                "name": "abi",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -1,
+                                "src": "4737:3:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_abi",
+                                  "typeString": "abi"
+                                }
+                              },
+                              "id": 34042,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "encodePacked",
+                              "nodeType": "MemberAccess",
+                              "src": "4737:16:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                "typeString": "function () pure returns (bytes memory)"
+                              }
+                            },
+                            "id": 34045,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "4737:37:70",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          ],
+                          "id": 34040,
+                          "name": "keccak256",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -8,
+                          "src": "4727:9:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                            "typeString": "function (bytes memory) pure returns (bytes32)"
+                          }
+                        },
+                        "id": 34046,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "4727:48:70",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 34039,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "4719:7:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint256_$",
+                        "typeString": "type(uint256)"
+                      },
+                      "typeName": {
+                        "id": 34038,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4719:7:70",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 34047,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4719:57:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4687:89:70"
+                },
+                {
+                  "expression": {
+                    "id": 34055,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 34049,
+                      "name": "proxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34034,
+                      "src": "4787:5:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 34051,
+                          "name": "_singleton",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34023,
+                          "src": "4816:10:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 34052,
+                          "name": "initializer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34025,
+                          "src": "4828:11:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "id": 34053,
+                          "name": "saltNonceWithCallback",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34037,
+                          "src": "4841:21:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 34050,
+                        "name": "createProxyWithNonce",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34020,
+                        "src": "4795:20:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$returns$_t_contract$_GnosisSafeProxy_$33863_$",
+                          "typeString": "function (address,bytes memory,uint256) returns (contract GnosisSafeProxy)"
+                        }
+                      },
+                      "id": 34054,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4795:68:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "src": "4787:76:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "id": 34056,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4787:76:70"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 34065,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "arguments": [
+                        {
+                          "id": 34059,
+                          "name": "callback",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34030,
+                          "src": "4886:8:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                            "typeString": "contract IProxyCreationCallback"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                            "typeString": "contract IProxyCreationCallback"
+                          }
+                        ],
+                        "id": 34058,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "4878:7:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 34057,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "4878:7:70",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 34060,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4878:17:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "hexValue": "30",
+                          "id": 34063,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "4907:1:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 34062,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "4899:7:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 34061,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "4899:7:70",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 34064,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4899:10:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "4878:31:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 34075,
+                  "nodeType": "IfStatement",
+                  "src": "4874:101:70",
+                  "trueBody": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 34069,
+                          "name": "proxy",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34034,
+                          "src": "4933:5:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                            "typeString": "contract GnosisSafeProxy"
+                          }
+                        },
+                        {
+                          "id": 34070,
+                          "name": "_singleton",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34023,
+                          "src": "4940:10:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 34071,
+                          "name": "initializer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34025,
+                          "src": "4952:11:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "id": 34072,
+                          "name": "saltNonce",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34027,
+                          "src": "4965:9:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                            "typeString": "contract GnosisSafeProxy"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression": {
+                          "id": 34066,
+                          "name": "callback",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34030,
+                          "src": "4911:8:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                            "typeString": "contract IProxyCreationCallback"
+                          }
+                        },
+                        "id": 34068,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "proxyCreated",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 34125,
+                        "src": "4911:21:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_contract$_GnosisSafeProxy_$33863_$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$returns$__$",
+                          "typeString": "function (contract GnosisSafeProxy,address,bytes memory,uint256) external"
+                        }
+                      },
+                      "id": 34073,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4911:64:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$",
+                        "typeString": "tuple()"
+                      }
+                    },
+                    "id": 34074,
+                    "nodeType": "ExpressionStatement",
+                    "src": "4911:64:70"
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 34021,
+              "nodeType": "StructuredDocumentation",
+              "src": "3926:531:70",
+              "text": "@dev Allows to create new proxy contact, execute a message call to the new proxy and call a specified callback within one transaction\n @param _singleton Address of singleton contract.\n @param initializer Payload for message call sent to new proxy contract.\n @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\n @param callback Callback that will be invoked after the new proxy contract has been successfully deployed and initialized."
+            },
+            "functionSelector": "d18af54d",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createProxyWithCallback",
+            "nameLocation": "4472:23:70",
+            "parameters": {
+              "id": 34031,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34023,
+                  "mutability": "mutable",
+                  "name": "_singleton",
+                  "nameLocation": "4514:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34077,
+                  "src": "4506:18:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34022,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4506:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34025,
+                  "mutability": "mutable",
+                  "name": "initializer",
+                  "nameLocation": "4548:11:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34077,
+                  "src": "4535:24:70",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 34024,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4535:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34027,
+                  "mutability": "mutable",
+                  "name": "saltNonce",
+                  "nameLocation": "4578:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34077,
+                  "src": "4570:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34026,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4570:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34030,
+                  "mutability": "mutable",
+                  "name": "callback",
+                  "nameLocation": "4621:8:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34077,
+                  "src": "4598:31:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                    "typeString": "contract IProxyCreationCallback"
+                  },
+                  "typeName": {
+                    "id": 34029,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 34028,
+                      "name": "IProxyCreationCallback",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 34126,
+                      "src": "4598:22:70"
+                    },
+                    "referencedDeclaration": 34126,
+                    "src": "4598:22:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IProxyCreationCallback_$34126",
+                      "typeString": "contract IProxyCreationCallback"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4495:141:70"
+            },
+            "returnParameters": {
+              "id": 34035,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34034,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "4669:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34077,
+                  "src": "4653:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 34033,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 34032,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "4653:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "4653:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4652:23:70"
+            },
+            "scope": 34110,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 34109,
+            "nodeType": "FunctionDefinition",
+            "src": "5608:321:70",
+            "nodes": [],
+            "body": {
+              "id": 34108,
+              "nodeType": "Block",
+              "src": "5796:133:70",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 34096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 34090,
+                      "name": "proxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34088,
+                      "src": "5807:5:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 34092,
+                          "name": "_singleton",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34080,
+                          "src": "5836:10:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 34093,
+                          "name": "initializer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34082,
+                          "src": "5848:11:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_calldata_ptr",
+                            "typeString": "bytes calldata"
+                          }
+                        },
+                        {
+                          "id": 34094,
+                          "name": "saltNonce",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34084,
+                          "src": "5861:9:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_bytes_calldata_ptr",
+                            "typeString": "bytes calldata"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 34091,
+                        "name": "deployProxyWithNonce",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33987,
+                        "src": "5815:20:70",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$returns$_t_contract$_GnosisSafeProxy_$33863_$",
+                          "typeString": "function (address,bytes memory,uint256) returns (contract GnosisSafeProxy)"
+                        }
+                      },
+                      "id": 34095,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "5815:56:70",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                        "typeString": "contract GnosisSafeProxy"
+                      }
+                    },
+                    "src": "5807:64:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "id": 34097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5807:64:70"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 34103,
+                                "name": "proxy",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 34088,
+                                "src": "5913:5:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                                  "typeString": "contract GnosisSafeProxy"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                                  "typeString": "contract GnosisSafeProxy"
+                                }
+                              ],
+                              "expression": {
+                                "id": 34101,
+                                "name": "abi",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -1,
+                                "src": "5896:3:70",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_abi",
+                                  "typeString": "abi"
+                                }
+                              },
+                              "id": 34102,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "encodePacked",
+                              "nodeType": "MemberAccess",
+                              "src": "5896:16:70",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                "typeString": "function () pure returns (bytes memory)"
+                              }
+                            },
+                            "id": 34104,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "5896:23:70",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          ],
+                          "id": 34100,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "5889:6:70",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_string_storage_ptr_$",
+                            "typeString": "type(string storage pointer)"
+                          },
+                          "typeName": {
+                            "id": 34099,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "5889:6:70",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 34105,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "5889:31:70",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 34098,
+                      "name": "revert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -19,
+                        -19
+                      ],
+                      "referencedDeclaration": -19,
+                      "src": "5882:6:70",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory) pure"
+                      }
+                    },
+                    "id": 34106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "5882:39:70",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34107,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5882:39:70"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 34078,
+              "nodeType": "StructuredDocumentation",
+              "src": "4991:611:70",
+              "text": "@dev Allows to get the address for a new proxy contact created via `createProxyWithNonce`\n      This method is only meant for address calculation purpose when you use an initializer that would revert,\n      therefore the response is returned with a revert. When calling this method set `from` to the address of the proxy factory.\n @param _singleton Address of singleton contract.\n @param initializer Payload for message call sent to new proxy contract.\n @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+            },
+            "functionSelector": "2500510e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateCreateProxyWithNonceAddress",
+            "nameLocation": "5617:36:70",
+            "parameters": {
+              "id": 34085,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34080,
+                  "mutability": "mutable",
+                  "name": "_singleton",
+                  "nameLocation": "5672:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34109,
+                  "src": "5664:18:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34079,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5664:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34082,
+                  "mutability": "mutable",
+                  "name": "initializer",
+                  "nameLocation": "5708:11:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34109,
+                  "src": "5693:26:70",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 34081,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5693:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34084,
+                  "mutability": "mutable",
+                  "name": "saltNonce",
+                  "nameLocation": "5738:9:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34109,
+                  "src": "5730:17:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34083,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5730:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5653:101:70"
+            },
+            "returnParameters": {
+              "id": 34089,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34088,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "5789:5:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34109,
+                  "src": "5773:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 34087,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 34086,
+                      "name": "GnosisSafeProxy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 33863,
+                      "src": "5773:15:70"
+                    },
+                    "referencedDeclaration": 33863,
+                    "src": "5773:15:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5772:23:70"
+            },
+            "scope": 34110,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GnosisSafeProxyFactory",
+        "contractDependencies": [
+          33863
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 33868,
+          "nodeType": "StructuredDocumentation",
+          "src": "153:179:70",
+          "text": "@title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\n @author Stefan George - <stefan@gnosis.pm>"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          34110
+        ],
+        "name": "GnosisSafeProxyFactory",
+        "nameLocation": "341:22:70",
+        "scope": 34111,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 70
+}

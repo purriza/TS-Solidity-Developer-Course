@@ -1,0 +1,51 @@
+APPROACHING/SOLUTION
+
+ThreeSigmaNFT.sol
+
+We have 2 interactions with this contract:
+
+- Users have to mint a NFT before entering the Challenge -> mintNFT function (Mints the NFT and then transfers it to the Challenge.sol)
+- Challenge.sol has to transfer the NFTs to the winner -> awardNFT function
+
+Challenge.sol
+
+Since we have 2 challenges running at the same time and both have to keep the timer and the currentWinner, a struct to save this data seems nice -> struct ChallengeData
+Then we also need to store the tokenIds in order to be able to transfer them to the winner -> uint256[] NFTtokenIds
+
+We have to control when users deposit ETH (function receive()) or NFT (IERC721Receiver onERC721Received), in both situations we have to check if the 
+Challenge has already ended (modifier CheckTimer).
+In case that the Challenge is still up -> We update the timer (block.timestamp) and the currentWinner (msg.sender)
+In case that the Challenge has ended -> Require message
+
+Since the SmartContract by itself cant send a transaction, we have to add 2 methods in order to be able to check if the Challenges have ended and award the winners
+ETHChallenge -> Sending all the contract balance to the winners address
+NFTChallenge -> Transfering all the NFTs to the winners address
+
+CLI COMMANDS - FOUNDRY
+
+BUILD/TEST
+
+forge init <NFT_Challenge>
+
+forge build
+
+<forge test>
+
+
+DEPLOYMENT
+
+forge create --rpc-url beeeng-training-testnet.westus3.cloudapp.azure.com:8545 --private-key <your_private_key> src/MyContract.sol:MyContract
+forge create --rpc-url http://beeeng-training-testnet.westus3.cloudapp.azure.com:8545 --private-key 3c75fe15d781bb3f87f70695430bb0db9ebc2a2b9b67da7eb4573f741ad368e0 src/ThreeSigmaNFT.sol:ThreeSigmaNFT
+
+
+forge create --rpc-url http://beeeng-training-testnet.westus3.cloudapp.azure.com:8545 --private-key 3c75fe15d781bb3f87f70695430bb0db9ebc2a2b9b67da7eb4573f741ad368e0 src/Challenge.sol:Challenge
+
+
+INTERACT
+
+cast call 0x6b175474e89094c44da98b954eedeac495271d0f "totalSupply()(uint256)" --rpc-url beeeng-training-testnet.westus3.cloudapp.azure.com:8545
+
+cast send --private-key <Your Private Key> 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc $(cast --from-utf8 "hello world") --rpc-url beeeng-training-testnet.westus3.cloudapp.azure.com:8545
+
+
+

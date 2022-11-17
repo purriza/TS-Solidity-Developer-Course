@@ -1,0 +1,151 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122077242b94f5f16089ca626c7cc6c5ee2e5f00212e1f972f69b63abf8d86ec2bba64736f6c634300080f0033",
+    "sourceMap": "169:59:59:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea264697066735822122077242b94f5f16089ca626c7cc6c5ee2e5f00212e1f972f69b63abf8d86ec2bba64736f6c634300080f0033",
+    "sourceMap": "169:59:59:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Enum - Collection of enums\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/Enum.sol\":\"Enum\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/Enum.sol\":{\"keccak256\":\"0x758eb2457790c50a6b8c301841fd01ba11f899b1cf06e56b2c2c74133196a02d\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://e2c9b750490142c1770df5d62e21bcf4a2d8dc017b22d3a0ece24cf62e2465b9\",\"dweb:/ipfs/QmVKzUA4Jypv3RihefNmwqjy4PokVeiQEj4jWPEv65sssM\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@safe/=lib/safe-contracts/",
+        ":@uniswapv2/=src/src-0_6_x/uniswapv2/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        ":safe-contracts/=lib/safe-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/safe-contracts/contracts/common/Enum.sol": "Enum"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/safe-contracts/contracts/common/Enum.sol": {
+        "keccak256": "0x758eb2457790c50a6b8c301841fd01ba11f899b1cf06e56b2c2c74133196a02d",
+        "urls": [
+          "bzz-raw://e2c9b750490142c1770df5d62e21bcf4a2d8dc017b22d3a0ece24cf62e2465b9",
+          "dweb:/ipfs/QmVKzUA4Jypv3RihefNmwqjy4PokVeiQEj4jWPEv65sssM"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/safe-contracts/contracts/common/Enum.sol",
+    "id": 33537,
+    "exportedSymbols": {
+      "Enum": [
+        33536
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "43:187:59",
+    "nodes": [
+      {
+        "id": 33531,
+        "nodeType": "PragmaDirective",
+        "src": "43:31:59",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 33536,
+        "nodeType": "ContractDefinition",
+        "src": "169:59:59",
+        "nodes": [
+          {
+            "id": 33535,
+            "nodeType": "EnumDefinition",
+            "src": "190:35:59",
+            "nodes": [],
+            "canonicalName": "Enum.Operation",
+            "members": [
+              {
+                "id": 33533,
+                "name": "Call",
+                "nameLocation": "206:4:59",
+                "nodeType": "EnumValue",
+                "src": "206:4:59"
+              },
+              {
+                "id": 33534,
+                "name": "DelegateCall",
+                "nameLocation": "212:12:59",
+                "nodeType": "EnumValue",
+                "src": "212:12:59"
+              }
+            ],
+            "name": "Operation",
+            "nameLocation": "195:9:59"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Enum",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 33532,
+          "nodeType": "StructuredDocumentation",
+          "src": "78:91:59",
+          "text": "@title Enum - Collection of enums\n @author Richard Meissner - <richard@gnosis.pm>"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          33536
+        ],
+        "name": "Enum",
+        "nameLocation": "178:4:59",
+        "scope": 33537,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 59
+}
