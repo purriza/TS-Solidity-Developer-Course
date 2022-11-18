@@ -1,17 +1,17 @@
 {
   "abi": [],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212202d0fda9a9e9c2f474cda0454eb098b94d3caa9714146b1bb0774cda7076e1c4164736f6c634300080f0033",
-    "sourceMap": "206:286:62:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c1283024154dd5754257066c45b68db267d9e7f1c3c6de59f102681fad06842064736f6c634300080f0033",
+    "sourceMap": "201:276:62:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052600080fdfea26469706673582212202d0fda9a9e9c2f474cda0454eb098b94d3caa9714146b1bb0774cda7076e1c4164736f6c634300080f0033",
-    "sourceMap": "206:286:62:-:0;;;;;",
+    "object": "0x6080604052600080fdfea2646970667358221220c1283024154dd5754257066c45b68db267d9e7f1c3c6de59f102681fad06842064736f6c634300080f0033",
+    "sourceMap": "201:276:62:-:0;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"SelfAuthorized - authorizes current contract to perform actions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/SelfAuthorized.sol\":\"SelfAuthorized\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/SelfAuthorized.sol\":{\"keccak256\":\"0x449be7ba3829c61a4c55525874d544b851f511b66ef8c2bc30229d4c50b21446\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://6e8df86641ffcac9a7e6db28ad8c5b12d7a11a07cc3f25f7cbad910070cbb05c\",\"dweb:/ipfs/QmVzHdT3gaiaRrQF8y6mWViSBHD44toXEz32h98dwNetSk\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"SelfAuthorized - authorizes current contract to perform actions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/SelfAuthorized.sol\":\"SelfAuthorized\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/SelfAuthorized.sol\":{\"keccak256\":\"0x59d36efca578b75541a776f62a0d0ef03712fc27b6647c3915c14b572106d7bc\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://8530c6e0392415d42486847cd4368d30f6cac42051596330692a571fcdbb9e29\",\"dweb:/ipfs/QmWw51Pshw5t2sMKANzxtfNdBSQUyQQpfTr3Mi7oNJGk7U\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.15+commit.e14f2714"
@@ -57,10 +57,10 @@
     },
     "sources": {
       "lib/safe-contracts/contracts/common/SelfAuthorized.sol": {
-        "keccak256": "0x449be7ba3829c61a4c55525874d544b851f511b66ef8c2bc30229d4c50b21446",
+        "keccak256": "0x59d36efca578b75541a776f62a0d0ef03712fc27b6647c3915c14b572106d7bc",
         "urls": [
-          "bzz-raw://6e8df86641ffcac9a7e6db28ad8c5b12d7a11a07cc3f25f7cbad910070cbb05c",
-          "dweb:/ipfs/QmVzHdT3gaiaRrQF8y6mWViSBHD44toXEz32h98dwNetSk"
+          "bzz-raw://8530c6e0392415d42486847cd4368d30f6cac42051596330692a571fcdbb9e29",
+          "dweb:/ipfs/QmWw51Pshw5t2sMKANzxtfNdBSQUyQQpfTr3Mi7oNJGk7U"
         ],
         "license": "LGPL-3.0-only"
       }
@@ -76,12 +76,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "43:451:62",
+    "src": "42:436:62",
     "nodes": [
       {
         "id": 33587,
         "nodeType": "PragmaDirective",
-        "src": "43:31:62",
+        "src": "42:31:62",
         "nodes": [],
         "literals": [
           "solidity",
@@ -96,17 +96,17 @@
       {
         "id": 33611,
         "nodeType": "ContractDefinition",
-        "src": "206:286:62",
+        "src": "201:276:62",
         "nodes": [
           {
             "id": 33603,
             "nodeType": "FunctionDefinition",
-            "src": "237:104:62",
+            "src": "231:102:62",
             "nodes": [],
             "body": {
               "id": 33602,
               "nodeType": "Block",
-              "src": "277:64:62",
+              "src": "271:62:62",
               "nodes": [],
               "statements": [
                 {
@@ -129,7 +129,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -15,
-                            "src": "296:3:62",
+                            "src": "289:3:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -142,7 +142,7 @@
                           "lValueRequested": false,
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "296:10:62",
+                          "src": "289:10:62",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -158,7 +158,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": -28,
-                              "src": "318:4:62",
+                              "src": "311:4:62",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_SelfAuthorized_$33611",
                                 "typeString": "contract SelfAuthorized"
@@ -178,7 +178,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "310:7:62",
+                            "src": "303:7:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -187,7 +187,7 @@
                               "id": 33594,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "310:7:62",
+                              "src": "303:7:62",
                               "typeDescriptions": {}
                             }
                           },
@@ -199,14 +199,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "310:13:62",
+                          "src": "303:13:62",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "296:27:62",
+                        "src": "289:27:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -221,7 +221,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "325:7:62",
+                        "src": "318:7:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b7248be3e8887f14d79f63d350787adcdb5e12b47898ebd6ef2aacf660fc9f17",
                           "typeString": "literal_string \"GS031\""
@@ -248,7 +248,7 @@
                         -18
                       ],
                       "referencedDeclaration": -18,
-                      "src": "288:7:62",
+                      "src": "281:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -262,7 +262,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "288:45:62",
+                    "src": "281:45:62",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -271,7 +271,7 @@
                   },
                   "id": 33601,
                   "nodeType": "ExpressionStatement",
-                  "src": "288:45:62"
+                  "src": "281:45:62"
                 }
               ]
             },
@@ -279,18 +279,18 @@
             "kind": "function",
             "modifiers": [],
             "name": "requireSelfCall",
-            "nameLocation": "246:15:62",
+            "nameLocation": "240:15:62",
             "parameters": {
               "id": 33589,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "261:2:62"
+              "src": "255:2:62"
             },
             "returnParameters": {
               "id": 33590,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "277:0:62"
+              "src": "271:0:62"
             },
             "scope": 33611,
             "stateMutability": "view",
@@ -300,12 +300,12 @@
           {
             "id": 33610,
             "nodeType": "ModifierDefinition",
-            "src": "349:140:62",
+            "src": "339:136:62",
             "nodes": [],
             "body": {
               "id": 33609,
               "nodeType": "Block",
-              "src": "371:118:62",
+              "src": "361:114:62",
               "nodes": [],
               "statements": [
                 {
@@ -318,7 +318,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 33603,
-                      "src": "452:15:62",
+                      "src": "440:15:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -332,7 +332,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "452:17:62",
+                    "src": "440:17:62",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -341,22 +341,22 @@
                   },
                   "id": 33607,
                   "nodeType": "ExpressionStatement",
-                  "src": "452:17:62"
+                  "src": "440:17:62"
                 },
                 {
                   "id": 33608,
                   "nodeType": "PlaceholderStatement",
-                  "src": "480:1:62"
+                  "src": "467:1:62"
                 }
               ]
             },
             "name": "authorized",
-            "nameLocation": "358:10:62",
+            "nameLocation": "348:10:62",
             "parameters": {
               "id": 33604,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "368:2:62"
+              "src": "358:2:62"
             },
             "virtual": false,
             "visibility": "internal"
@@ -370,7 +370,7 @@
         "documentation": {
           "id": 33588,
           "nodeType": "StructuredDocumentation",
-          "src": "78:128:62",
+          "src": "75:126:62",
           "text": "@title SelfAuthorized - authorizes current contract to perform actions\n @author Richard Meissner - <richard@gnosis.pm>"
         },
         "fullyImplemented": true,
@@ -378,7 +378,7 @@
           33611
         ],
         "name": "SelfAuthorized",
-        "nameLocation": "215:14:62",
+        "nameLocation": "210:14:62",
         "scope": 33612,
         "usedErrors": []
       }

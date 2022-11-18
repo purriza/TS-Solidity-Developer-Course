@@ -1,17 +1,17 @@
 {
   "abi": [],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a72c0492a44e70c11b6655d46fbaf1b01ee4593d7ff02ce934bdd2da6b00079764736f6c634300080f0033",
-    "sourceMap": "327:278:64:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201143056e54caf9f2ade2f4ac515efe49a5ce1435ee796b3b6e919b20eb377e8b64736f6c634300080f0033",
+    "sourceMap": "321:274:64:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052600080fdfea2646970667358221220a72c0492a44e70c11b6655d46fbaf1b01ee4593d7ff02ce934bdd2da6b00079764736f6c634300080f0033",
-    "sourceMap": "327:278:64:-:0;;;;;",
+    "object": "0x6080604052600080fdfea26469706673582212201143056e54caf9f2ade2f4ac515efe49a5ce1435ee796b3b6e919b20eb377e8b64736f6c634300080f0033",
+    "sourceMap": "321:274:64:-:0;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.io>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Singleton - Base for singleton contracts (should always be first super contract)         This contract is tightly coupled to our proxy contract (see `proxies/GnosisSafeProxy.sol`)\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/Singleton.sol\":\"Singleton\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/Singleton.sol\":{\"keccak256\":\"0xd64bb544ba159ab04ca22e5b78f94c18e10adaaa7934d80b5c74d15f8e151b29\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://7af5ae11c8c52be01bbcf5bfb28073b33bc87cac499c85cefc9440cdc1133597\",\"dweb:/ipfs/QmRSkuT2aTcd5CEf3AF9mFz4sqNfX1Z1TeTHaWhyoM463g\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.io>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Singleton - Base for singleton contracts (should always be first super contract)         This contract is tightly coupled to our proxy contract (see `proxies/GnosisSafeProxy.sol`)\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/Singleton.sol\":\"Singleton\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/Singleton.sol\":{\"keccak256\":\"0x6e02c18998de8834dd7d69890cb6ede996b6f635d2337081a596d91e35e2c648\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://ce1dfe9f820352b6f95b350ac0b3fa8afc24ad77bffffc2c9e00462e2a41a666\",\"dweb:/ipfs/QmVr2dCUbNbg5e7UsgngGij5mybgkXcbf5e5cPhT21aFXA\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.15+commit.e14f2714"
@@ -57,10 +57,10 @@
     },
     "sources": {
       "lib/safe-contracts/contracts/common/Singleton.sol": {
-        "keccak256": "0xd64bb544ba159ab04ca22e5b78f94c18e10adaaa7934d80b5c74d15f8e151b29",
+        "keccak256": "0x6e02c18998de8834dd7d69890cb6ede996b6f635d2337081a596d91e35e2c648",
         "urls": [
-          "bzz-raw://7af5ae11c8c52be01bbcf5bfb28073b33bc87cac499c85cefc9440cdc1133597",
-          "dweb:/ipfs/QmRSkuT2aTcd5CEf3AF9mFz4sqNfX1Z1TeTHaWhyoM463g"
+          "bzz-raw://ce1dfe9f820352b6f95b350ac0b3fa8afc24ad77bffffc2c9e00462e2a41a666",
+          "dweb:/ipfs/QmVr2dCUbNbg5e7UsgngGij5mybgkXcbf5e5cPhT21aFXA"
         ],
         "license": "LGPL-3.0-only"
       }
@@ -76,12 +76,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "43:564:64",
+    "src": "42:554:64",
     "nodes": [
       {
         "id": 33633,
         "nodeType": "PragmaDirective",
-        "src": "43:31:64",
+        "src": "42:31:64",
         "nodes": [],
         "literals": [
           "solidity",
@@ -96,17 +96,17 @@
       {
         "id": 33637,
         "nodeType": "ContractDefinition",
-        "src": "327:278:64",
+        "src": "321:274:64",
         "nodes": [
           {
             "id": 33636,
             "nodeType": "VariableDeclaration",
-            "src": "576:25:64",
+            "src": "567:25:64",
             "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "singleton",
-            "nameLocation": "592:9:64",
+            "nameLocation": "583:9:64",
             "scope": 33637,
             "stateVariable": true,
             "storageLocation": "default",
@@ -118,7 +118,7 @@
               "id": 33635,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "576:7:64",
+              "src": "567:7:64",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -136,7 +136,7 @@
         "documentation": {
           "id": 33634,
           "nodeType": "StructuredDocumentation",
-          "src": "78:249:64",
+          "src": "75:246:64",
           "text": "@title Singleton - Base for singleton contracts (should always be first super contract)\n         This contract is tightly coupled to our proxy contract (see `proxies/GnosisSafeProxy.sol`)\n @author Richard Meissner - <richard@gnosis.io>"
         },
         "fullyImplemented": true,
@@ -144,7 +144,7 @@
           33637
         ],
         "name": "Singleton",
-        "nameLocation": "336:9:64",
+        "nameLocation": "330:9:64",
         "scope": 33638,
         "usedErrors": []
       }

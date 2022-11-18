@@ -17,6 +17,10 @@ contract StealerTest is StealerFixture {
         /**
          * Code your exploit here
          */
+        /*
+            ---- We need to get free ETH (at least for one transaction) ----
+        */
+        
 
         // Stop acting as the attacker
         vm.stopPrank();

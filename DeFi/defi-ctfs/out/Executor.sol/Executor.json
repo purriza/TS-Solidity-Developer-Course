@@ -1,17 +1,17 @@
 {
   "abi": [],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220daaa16e5ec83358b44d654028e47f656878f7f304b8e4adfae28df1d9b0c959564736f6c634300080f0033",
-    "sourceMap": "224:685:54:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220f46d31536a280703e23d1aa0d705b79c1ef8b7846515256fdffeb39f620ba3c964736f6c634300080f0033",
+    "sourceMap": "218:665:54:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052600080fdfea2646970667358221220daaa16e5ec83358b44d654028e47f656878f7f304b8e4adfae28df1d9b0c959564736f6c634300080f0033",
-    "sourceMap": "224:685:54:-:0;;;;;",
+    "object": "0x6080604052600080fdfea2646970667358221220f46d31536a280703e23d1aa0d705b79c1ef8b7846515256fdffeb39f620ba3c964736f6c634300080f0033",
+    "sourceMap": "218:665:54:-:0;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Executor - A contract that can execute transactions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/base/Executor.sol\":\"Executor\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/base/Executor.sol\":{\"keccak256\":\"0xc80087ef7a6e394b0e3526661ffe340cc63bf14cbe921c65146584d846828479\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://511135750039efd917ff87d08aa1ea319dd0f4ca483e0240164d0ad2789c0f90\",\"dweb:/ipfs/QmfW43fj4nQWdGWrC7BearQct7w7VR5b99isdVZNSPR96f\"]},\"lib/safe-contracts/contracts/common/Enum.sol\":{\"keccak256\":\"0x758eb2457790c50a6b8c301841fd01ba11f899b1cf06e56b2c2c74133196a02d\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://e2c9b750490142c1770df5d62e21bcf4a2d8dc017b22d3a0ece24cf62e2465b9\",\"dweb:/ipfs/QmVKzUA4Jypv3RihefNmwqjy4PokVeiQEj4jWPEv65sssM\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Executor - A contract that can execute transactions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/base/Executor.sol\":\"Executor\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/base/Executor.sol\":{\"keccak256\":\"0x4d3a900673473466bc27413fdbb11aae60b5580b792c49411f01544e0b24fe08\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://71ada0590998f47d1ee9759aa190c82d4b348d59a2f582747650d9720245a309\",\"dweb:/ipfs/Qmb9UudLoJpPutHVP9pXd1poP5CqFf5sxVFuYw14SYfRFk\"]},\"lib/safe-contracts/contracts/common/Enum.sol\":{\"keccak256\":\"0x473e45b1a5cc47be494b0e123c9127f0c11c1e0992a321ae5a644c0bfdb2c14f\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://948e6d5a8bd7377f7795b6e28584eab9be5c0a8db240bf5e606744a175238c3d\",\"dweb:/ipfs/QmQQaUmQfpuejV41jbxKSTgEBYYCcVTjCsDMgf2htgz6ej\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.15+commit.e14f2714"
@@ -57,18 +57,18 @@
     },
     "sources": {
       "lib/safe-contracts/contracts/base/Executor.sol": {
-        "keccak256": "0xc80087ef7a6e394b0e3526661ffe340cc63bf14cbe921c65146584d846828479",
+        "keccak256": "0x4d3a900673473466bc27413fdbb11aae60b5580b792c49411f01544e0b24fe08",
         "urls": [
-          "bzz-raw://511135750039efd917ff87d08aa1ea319dd0f4ca483e0240164d0ad2789c0f90",
-          "dweb:/ipfs/QmfW43fj4nQWdGWrC7BearQct7w7VR5b99isdVZNSPR96f"
+          "bzz-raw://71ada0590998f47d1ee9759aa190c82d4b348d59a2f582747650d9720245a309",
+          "dweb:/ipfs/Qmb9UudLoJpPutHVP9pXd1poP5CqFf5sxVFuYw14SYfRFk"
         ],
         "license": "LGPL-3.0-only"
       },
       "lib/safe-contracts/contracts/common/Enum.sol": {
-        "keccak256": "0x758eb2457790c50a6b8c301841fd01ba11f899b1cf06e56b2c2c74133196a02d",
+        "keccak256": "0x473e45b1a5cc47be494b0e123c9127f0c11c1e0992a321ae5a644c0bfdb2c14f",
         "urls": [
-          "bzz-raw://e2c9b750490142c1770df5d62e21bcf4a2d8dc017b22d3a0ece24cf62e2465b9",
-          "dweb:/ipfs/QmVKzUA4Jypv3RihefNmwqjy4PokVeiQEj4jWPEv65sssM"
+          "bzz-raw://948e6d5a8bd7377f7795b6e28584eab9be5c0a8db240bf5e606744a175238c3d",
+          "dweb:/ipfs/QmQQaUmQfpuejV41jbxKSTgEBYYCcVTjCsDMgf2htgz6ej"
         ],
         "license": "LGPL-3.0-only"
       }
@@ -87,12 +87,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "43:868:54",
+    "src": "42:842:54",
     "nodes": [
       {
         "id": 32442,
         "nodeType": "PragmaDirective",
-        "src": "43:31:54",
+        "src": "42:31:54",
         "nodes": [],
         "literals": [
           "solidity",
@@ -107,7 +107,7 @@
       {
         "id": 32443,
         "nodeType": "ImportDirective",
-        "src": "76:28:54",
+        "src": "74:28:54",
         "nodes": [],
         "absolutePath": "lib/safe-contracts/contracts/common/Enum.sol",
         "file": "../common/Enum.sol",
@@ -120,17 +120,17 @@
       {
         "id": 32472,
         "nodeType": "ContractDefinition",
-        "src": "224:685:54",
+        "src": "218:665:54",
         "nodes": [
           {
             "id": 32471,
             "nodeType": "FunctionDefinition",
-            "src": "249:657:54",
+            "src": "242:639:54",
             "nodes": [],
             "body": {
               "id": 32470,
               "nodeType": "Block",
-              "src": "437:469:54",
+              "src": "424:457:54",
               "nodes": [],
               "statements": [
                 {
@@ -150,7 +150,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 32453,
-                      "src": "452:9:54",
+                      "src": "438:9:54",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Operation_$33535",
                         "typeString": "enum Enum.Operation"
@@ -166,7 +166,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 33536,
-                          "src": "465:4:54",
+                          "src": "451:4:54",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_Enum_$33536_$",
                             "typeString": "type(contract Enum)"
@@ -180,7 +180,7 @@
                         "memberName": "Operation",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 33535,
-                        "src": "465:14:54",
+                        "src": "451:14:54",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_enum$_Operation_$33535_$",
                           "typeString": "type(enum Enum.Operation)"
@@ -194,13 +194,13 @@
                       "memberName": "DelegateCall",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 33534,
-                      "src": "465:27:54",
+                      "src": "451:27:54",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Operation_$33535",
                         "typeString": "enum Enum.Operation"
                       }
                     },
-                    "src": "452:40:54",
+                    "src": "438:40:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -209,44 +209,44 @@
                   "falseBody": {
                     "id": 32468,
                     "nodeType": "Block",
-                    "src": "700:199:54",
+                    "src": "681:194:54",
                     "statements": [
                       {
                         "AST": {
                           "nodeType": "YulBlock",
-                          "src": "785:103:54",
+                          "src": "764:101:54",
                           "statements": [
                             {
                               "nodeType": "YulAssignment",
-                              "src": "804:69:54",
+                              "src": "782:69:54",
                               "value": {
                                 "arguments": [
                                   {
                                     "name": "txGas",
                                     "nodeType": "YulIdentifier",
-                                    "src": "820:5:54"
+                                    "src": "798:5:54"
                                   },
                                   {
                                     "name": "to",
                                     "nodeType": "YulIdentifier",
-                                    "src": "827:2:54"
+                                    "src": "805:2:54"
                                   },
                                   {
                                     "name": "value",
                                     "nodeType": "YulIdentifier",
-                                    "src": "831:5:54"
+                                    "src": "809:5:54"
                                   },
                                   {
                                     "arguments": [
                                       {
                                         "name": "data",
                                         "nodeType": "YulIdentifier",
-                                        "src": "842:4:54"
+                                        "src": "820:4:54"
                                       },
                                       {
                                         "kind": "number",
                                         "nodeType": "YulLiteral",
-                                        "src": "848:4:54",
+                                        "src": "826:4:54",
                                         "type": "",
                                         "value": "0x20"
                                       }
@@ -254,38 +254,38 @@
                                     "functionName": {
                                       "name": "add",
                                       "nodeType": "YulIdentifier",
-                                      "src": "838:3:54"
+                                      "src": "816:3:54"
                                     },
                                     "nodeType": "YulFunctionCall",
-                                    "src": "838:15:54"
+                                    "src": "816:15:54"
                                   },
                                   {
                                     "arguments": [
                                       {
                                         "name": "data",
                                         "nodeType": "YulIdentifier",
-                                        "src": "861:4:54"
+                                        "src": "839:4:54"
                                       }
                                     ],
                                     "functionName": {
                                       "name": "mload",
                                       "nodeType": "YulIdentifier",
-                                      "src": "855:5:54"
+                                      "src": "833:5:54"
                                     },
                                     "nodeType": "YulFunctionCall",
-                                    "src": "855:11:54"
+                                    "src": "833:11:54"
                                   },
                                   {
                                     "kind": "number",
                                     "nodeType": "YulLiteral",
-                                    "src": "868:1:54",
+                                    "src": "846:1:54",
                                     "type": "",
                                     "value": "0"
                                   },
                                   {
                                     "kind": "number",
                                     "nodeType": "YulLiteral",
-                                    "src": "871:1:54",
+                                    "src": "849:1:54",
                                     "type": "",
                                     "value": "0"
                                   }
@@ -293,16 +293,16 @@
                                 "functionName": {
                                   "name": "call",
                                   "nodeType": "YulIdentifier",
-                                  "src": "815:4:54"
+                                  "src": "793:4:54"
                                 },
                                 "nodeType": "YulFunctionCall",
-                                "src": "815:58:54"
+                                "src": "793:58:54"
                               },
                               "variableNames": [
                                 {
                                   "name": "success",
                                   "nodeType": "YulIdentifier",
-                                  "src": "804:7:54"
+                                  "src": "782:7:54"
                                 }
                               ]
                             }
@@ -314,90 +314,90 @@
                             "declaration": 32450,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "842:4:54",
+                            "src": "820:4:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32450,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "861:4:54",
+                            "src": "839:4:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32458,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "804:7:54",
+                            "src": "782:7:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32446,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "827:2:54",
+                            "src": "805:2:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32455,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "820:5:54",
+                            "src": "798:5:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32448,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "831:5:54",
+                            "src": "809:5:54",
                             "valueSize": 1
                           }
                         ],
                         "id": 32467,
                         "nodeType": "InlineAssembly",
-                        "src": "776:112:54"
+                        "src": "755:110:54"
                       }
                     ]
                   },
                   "id": 32469,
                   "nodeType": "IfStatement",
-                  "src": "448:451:54",
+                  "src": "434:441:54",
                   "trueBody": {
                     "id": 32466,
                     "nodeType": "Block",
-                    "src": "494:200:54",
+                    "src": "480:195:54",
                     "statements": [
                       {
                         "AST": {
                           "nodeType": "YulBlock",
-                          "src": "579:104:54",
+                          "src": "563:102:54",
                           "statements": [
                             {
                               "nodeType": "YulAssignment",
-                              "src": "598:70:54",
+                              "src": "581:70:54",
                               "value": {
                                 "arguments": [
                                   {
                                     "name": "txGas",
                                     "nodeType": "YulIdentifier",
-                                    "src": "622:5:54"
+                                    "src": "605:5:54"
                                   },
                                   {
                                     "name": "to",
                                     "nodeType": "YulIdentifier",
-                                    "src": "629:2:54"
+                                    "src": "612:2:54"
                                   },
                                   {
                                     "arguments": [
                                       {
                                         "name": "data",
                                         "nodeType": "YulIdentifier",
-                                        "src": "637:4:54"
+                                        "src": "620:4:54"
                                       },
                                       {
                                         "kind": "number",
                                         "nodeType": "YulLiteral",
-                                        "src": "643:4:54",
+                                        "src": "626:4:54",
                                         "type": "",
                                         "value": "0x20"
                                       }
@@ -405,38 +405,38 @@
                                     "functionName": {
                                       "name": "add",
                                       "nodeType": "YulIdentifier",
-                                      "src": "633:3:54"
+                                      "src": "616:3:54"
                                     },
                                     "nodeType": "YulFunctionCall",
-                                    "src": "633:15:54"
+                                    "src": "616:15:54"
                                   },
                                   {
                                     "arguments": [
                                       {
                                         "name": "data",
                                         "nodeType": "YulIdentifier",
-                                        "src": "656:4:54"
+                                        "src": "639:4:54"
                                       }
                                     ],
                                     "functionName": {
                                       "name": "mload",
                                       "nodeType": "YulIdentifier",
-                                      "src": "650:5:54"
+                                      "src": "633:5:54"
                                     },
                                     "nodeType": "YulFunctionCall",
-                                    "src": "650:11:54"
+                                    "src": "633:11:54"
                                   },
                                   {
                                     "kind": "number",
                                     "nodeType": "YulLiteral",
-                                    "src": "663:1:54",
+                                    "src": "646:1:54",
                                     "type": "",
                                     "value": "0"
                                   },
                                   {
                                     "kind": "number",
                                     "nodeType": "YulLiteral",
-                                    "src": "666:1:54",
+                                    "src": "649:1:54",
                                     "type": "",
                                     "value": "0"
                                   }
@@ -444,16 +444,16 @@
                                 "functionName": {
                                   "name": "delegatecall",
                                   "nodeType": "YulIdentifier",
-                                  "src": "609:12:54"
+                                  "src": "592:12:54"
                                 },
                                 "nodeType": "YulFunctionCall",
-                                "src": "609:59:54"
+                                "src": "592:59:54"
                               },
                               "variableNames": [
                                 {
                                   "name": "success",
                                   "nodeType": "YulIdentifier",
-                                  "src": "598:7:54"
+                                  "src": "581:7:54"
                                 }
                               ]
                             }
@@ -465,41 +465,41 @@
                             "declaration": 32450,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "637:4:54",
+                            "src": "620:4:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32450,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "656:4:54",
+                            "src": "639:4:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32458,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "598:7:54",
+                            "src": "581:7:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32446,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "629:2:54",
+                            "src": "612:2:54",
                             "valueSize": 1
                           },
                           {
                             "declaration": 32455,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "622:5:54",
+                            "src": "605:5:54",
                             "valueSize": 1
                           }
                         ],
                         "id": 32465,
                         "nodeType": "InlineAssembly",
-                        "src": "570:113:54"
+                        "src": "554:111:54"
                       }
                     ]
                   }
@@ -510,7 +510,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "258:7:54",
+            "nameLocation": "251:7:54",
             "parameters": {
               "id": 32456,
               "nodeType": "ParameterList",
@@ -520,10 +520,10 @@
                   "id": 32446,
                   "mutability": "mutable",
                   "name": "to",
-                  "nameLocation": "284:2:54",
+                  "nameLocation": "276:2:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "276:10:54",
+                  "src": "268:10:54",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -534,7 +534,7 @@
                     "id": 32445,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "276:7:54",
+                    "src": "268:7:54",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -548,10 +548,10 @@
                   "id": 32448,
                   "mutability": "mutable",
                   "name": "value",
-                  "nameLocation": "305:5:54",
+                  "nameLocation": "296:5:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "297:13:54",
+                  "src": "288:13:54",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -562,7 +562,7 @@
                     "id": 32447,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "297:7:54",
+                    "src": "288:7:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -575,10 +575,10 @@
                   "id": 32450,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "334:4:54",
+                  "nameLocation": "324:4:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "321:17:54",
+                  "src": "311:17:54",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -589,7 +589,7 @@
                     "id": 32449,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "321:5:54",
+                    "src": "311:5:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -602,10 +602,10 @@
                   "id": 32453,
                   "mutability": "mutable",
                   "name": "operation",
-                  "nameLocation": "364:9:54",
+                  "nameLocation": "353:9:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "349:24:54",
+                  "src": "338:24:54",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -620,10 +620,10 @@
                       "name": "Enum.Operation",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 33535,
-                      "src": "349:14:54"
+                      "src": "338:14:54"
                     },
                     "referencedDeclaration": 33535,
-                    "src": "349:14:54",
+                    "src": "338:14:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Operation_$33535",
                       "typeString": "enum Enum.Operation"
@@ -636,10 +636,10 @@
                   "id": 32455,
                   "mutability": "mutable",
                   "name": "txGas",
-                  "nameLocation": "392:5:54",
+                  "nameLocation": "380:5:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "384:13:54",
+                  "src": "372:13:54",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -650,7 +650,7 @@
                     "id": 32454,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "384:7:54",
+                    "src": "372:7:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -659,7 +659,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "265:139:54"
+              "src": "258:133:54"
             },
             "returnParameters": {
               "id": 32459,
@@ -670,10 +670,10 @@
                   "id": 32458,
                   "mutability": "mutable",
                   "name": "success",
-                  "nameLocation": "428:7:54",
+                  "nameLocation": "415:7:54",
                   "nodeType": "VariableDeclaration",
                   "scope": 32471,
-                  "src": "423:12:54",
+                  "src": "410:12:54",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -684,7 +684,7 @@
                     "id": 32457,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "423:4:54",
+                    "src": "410:4:54",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -693,7 +693,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "422:14:54"
+              "src": "409:14:54"
             },
             "scope": 32472,
             "stateMutability": "nonpayable",
@@ -709,7 +709,7 @@
         "documentation": {
           "id": 32444,
           "nodeType": "StructuredDocumentation",
-          "src": "108:116:54",
+          "src": "104:114:54",
           "text": "@title Executor - A contract that can execute transactions\n @author Richard Meissner - <richard@gnosis.pm>"
         },
         "fullyImplemented": true,
@@ -717,7 +717,7 @@
           32472
         ],
         "name": "Executor",
-        "nameLocation": "233:8:54",
+        "nameLocation": "227:8:54",
         "scope": 32473,
         "usedErrors": []
       }

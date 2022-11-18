@@ -42,7 +42,7 @@
   "methodIdentifiers": {
     "uniswapV2Call(address,uint256,uint256,bytes)": "10d1e85c"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/src-0_6_x/uniswapv2/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"src/src-0_6_x/uniswapv2/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x2d828ae444e480b3bc29c949e75664bbd03abb320fa8af126cbdda7ed00feb08\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://50e0a308bb92f024dff62f064b71c823697337cd26001e19c4ba7d52804ef50f\",\"dweb:/ipfs/QmevfCGNrKqLiS1Fh5UEogRU6SCVF9EmKQZsvWQiXMsh8v\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/src-0_6_x/uniswapv2/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"src/src-0_6_x/uniswapv2/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x6bf2e1cd601f8df7a25606a03fb01532f33aa5d77278ef6e7fb72a3b95a2d8d8\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://aaaf7c44351d883b3830e484cc20fe1f91b832aaeb8c4631b1848b6bb08c7661\",\"dweb:/ipfs/QmbxistLwfsuywWLHgBpDcQu4f5j6wV13Vs3JrSd1gjX9N\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.6.12+commit.27d51765"
@@ -116,10 +116,10 @@
     },
     "sources": {
       "src/src-0_6_x/uniswapv2/interfaces/IUniswapV2Callee.sol": {
-        "keccak256": "0x2d828ae444e480b3bc29c949e75664bbd03abb320fa8af126cbdda7ed00feb08",
+        "keccak256": "0x6bf2e1cd601f8df7a25606a03fb01532f33aa5d77278ef6e7fb72a3b95a2d8d8",
         "urls": [
-          "bzz-raw://50e0a308bb92f024dff62f064b71c823697337cd26001e19c4ba7d52804ef50f",
-          "dweb:/ipfs/QmevfCGNrKqLiS1Fh5UEogRU6SCVF9EmKQZsvWQiXMsh8v"
+          "bzz-raw://aaaf7c44351d883b3830e484cc20fe1f91b832aaeb8c4631b1848b6bb08c7661",
+          "dweb:/ipfs/QmbxistLwfsuywWLHgBpDcQu4f5j6wV13Vs3JrSd1gjX9N"
         ],
         "license": "GPL-3.0"
       }
@@ -135,12 +135,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "39:164:6",
+    "src": "37:159:6",
     "nodes": [
       {
         "id": 4008,
         "nodeType": "PragmaDirective",
-        "src": "39:24:6",
+        "src": "37:24:6",
         "nodes": [],
         "literals": [
           "solidity",
@@ -152,12 +152,12 @@
       {
         "id": 4020,
         "nodeType": "ContractDefinition",
-        "src": "67:134:6",
+        "src": "63:132:6",
         "nodes": [
           {
             "id": 4019,
             "nodeType": "FunctionDefinition",
-            "src": "101:97:6",
+            "src": "96:97:6",
             "nodes": [],
             "documentation": null,
             "functionSelector": "10d1e85c",
@@ -178,7 +178,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4019,
-                  "src": "124:14:6",
+                  "src": "119:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -189,7 +189,7 @@
                     "id": 4009,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "124:7:6",
+                    "src": "119:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -207,7 +207,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4019,
-                  "src": "140:12:6",
+                  "src": "135:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -218,7 +218,7 @@
                     "id": 4011,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "140:4:6",
+                    "src": "135:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -235,7 +235,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4019,
-                  "src": "154:12:6",
+                  "src": "149:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -246,7 +246,7 @@
                     "id": 4013,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "154:4:6",
+                    "src": "149:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -263,7 +263,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4019,
-                  "src": "168:19:6",
+                  "src": "163:19:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -274,7 +274,7 @@
                     "id": 4015,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "168:5:6",
+                    "src": "163:5:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -284,13 +284,13 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "123:65:6"
+              "src": "118:65:6"
             },
             "returnParameters": {
               "id": 4018,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "197:0:6"
+              "src": "192:0:6"
             },
             "scope": 4020,
             "stateMutability": "nonpayable",

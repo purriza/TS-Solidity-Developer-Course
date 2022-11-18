@@ -1,0 +1,13 @@
+[submodule "DeFi/defi-ctfs/lib/forge-std"]
+	path = DeFi/defi-ctfs/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "DeFi/defi-ctfs/lib/openzeppelin-contracts"]
+	path = DeFi/defi-ctfs/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "DeFi/defi-ctfs/lib/openzeppelin-contracts-upgradeable"]
+	path = DeFi/defi-ctfs/lib/openzeppelin-contracts-upgradeable
+	url = https://github.com/openzeppelin/openzeppelin-contracts-upgradeable
+[submodule "DeFi/defi-ctfs/lib/safe-contracts"]
+	path = DeFi/defi-ctfs/lib/safe-contracts
+	url = https://github.com/safe-global/safe-contracts
+	branch = main

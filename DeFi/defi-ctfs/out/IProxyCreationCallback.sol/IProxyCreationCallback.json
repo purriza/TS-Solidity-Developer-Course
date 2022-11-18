@@ -42,7 +42,7 @@
   "methodIdentifiers": {
     "proxyCreated(address,address,bytes,uint256)": "1e52b518"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"proxyCreated\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":\"IProxyCreationCallback\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol\":{\"keccak256\":\"0xa926e53ca29ffb3c9648f7f104a5b99b58c798bc7f10df6188936648ef0c98ab\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://8dedc2722a13eba9d438df1ebb445acb90e2a98d4adc29069dc9579d18a687dc\",\"dweb:/ipfs/QmQu44bQwjEaJXWBKc7RXkAzVAwGoYZecwQCUWAmtatAtG\"]},\"lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":{\"keccak256\":\"0x362621dfce76c5333e9cd130ca7b7c8c21d1f2a7d0c01f42f9f7f43cd1c70841\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://de3ee5307da8cbe631baac80a490362398e48b185a52d9957aceae22d1e0856a\",\"dweb:/ipfs/QmafaV3uJvau2rZAChREhs3WCn4RzsJvoHyAh2MbYdFZ9g\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"proxyCreated\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":\"IProxyCreationCallback\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol\":{\"keccak256\":\"0x3bfdd453d9f896f7029d15bcafd11886957b320ad1764309d9f74fa059715249\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://5b5b7d0c8a900ba758e012236bf1c55e885fe5716aa79f6f693d22c31c85f7d5\",\"dweb:/ipfs/QmUq5oNsZY1b5pcYAzrY1i9oqyPUaiFhLaEWgB9ML6LrBj\"]},\"lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":{\"keccak256\":\"0x51a9ce914a6a943651c803541e44218a7ed0a2f98a94d55df66b173b5a11e365\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://5216ed8181c14d462ec821593c8f90f33c7dbe8b4c505a1092bf31a9d33132b9\",\"dweb:/ipfs/Qmbb2wkgijuTcEbGR7CnmiAtwZDyruQ2b1ged4HnLysQnT\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.15+commit.e14f2714"
@@ -116,18 +116,18 @@
     },
     "sources": {
       "lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol": {
-        "keccak256": "0xa926e53ca29ffb3c9648f7f104a5b99b58c798bc7f10df6188936648ef0c98ab",
+        "keccak256": "0x3bfdd453d9f896f7029d15bcafd11886957b320ad1764309d9f74fa059715249",
         "urls": [
-          "bzz-raw://8dedc2722a13eba9d438df1ebb445acb90e2a98d4adc29069dc9579d18a687dc",
-          "dweb:/ipfs/QmQu44bQwjEaJXWBKc7RXkAzVAwGoYZecwQCUWAmtatAtG"
+          "bzz-raw://5b5b7d0c8a900ba758e012236bf1c55e885fe5716aa79f6f693d22c31c85f7d5",
+          "dweb:/ipfs/QmUq5oNsZY1b5pcYAzrY1i9oqyPUaiFhLaEWgB9ML6LrBj"
         ],
         "license": "LGPL-3.0-only"
       },
       "lib/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
-        "keccak256": "0x362621dfce76c5333e9cd130ca7b7c8c21d1f2a7d0c01f42f9f7f43cd1c70841",
+        "keccak256": "0x51a9ce914a6a943651c803541e44218a7ed0a2f98a94d55df66b173b5a11e365",
         "urls": [
-          "bzz-raw://de3ee5307da8cbe631baac80a490362398e48b185a52d9957aceae22d1e0856a",
-          "dweb:/ipfs/QmafaV3uJvau2rZAChREhs3WCn4RzsJvoHyAh2MbYdFZ9g"
+          "bzz-raw://5216ed8181c14d462ec821593c8f90f33c7dbe8b4c505a1092bf31a9d33132b9",
+          "dweb:/ipfs/Qmbb2wkgijuTcEbGR7CnmiAtwZDyruQ2b1ged4HnLysQnT"
         ],
         "license": "LGPL-3.0-only"
       }
@@ -149,12 +149,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "43:277:71",
+    "src": "42:266:71",
     "nodes": [
       {
         "id": 34112,
         "nodeType": "PragmaDirective",
-        "src": "43:31:71",
+        "src": "42:31:71",
         "nodes": [],
         "literals": [
           "solidity",
@@ -169,7 +169,7 @@
       {
         "id": 34113,
         "nodeType": "ImportDirective",
-        "src": "76:31:71",
+        "src": "74:31:71",
         "nodes": [],
         "absolutePath": "lib/safe-contracts/contracts/proxies/GnosisSafeProxy.sol",
         "file": "./GnosisSafeProxy.sol",
@@ -182,19 +182,19 @@
       {
         "id": 34126,
         "nodeType": "ContractDefinition",
-        "src": "111:207:71",
+        "src": "107:200:71",
         "nodes": [
           {
             "id": 34125,
             "nodeType": "FunctionDefinition",
-            "src": "151:164:71",
+            "src": "146:159:71",
             "nodes": [],
             "functionSelector": "1e52b518",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "proxyCreated",
-            "nameLocation": "160:12:71",
+            "nameLocation": "155:12:71",
             "parameters": {
               "id": 34123,
               "nodeType": "ParameterList",
@@ -204,10 +204,10 @@
                   "id": 34116,
                   "mutability": "mutable",
                   "name": "proxy",
-                  "nameLocation": "199:5:71",
+                  "nameLocation": "193:5:71",
                   "nodeType": "VariableDeclaration",
                   "scope": 34125,
-                  "src": "183:21:71",
+                  "src": "177:21:71",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -222,10 +222,10 @@
                       "name": "GnosisSafeProxy",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 33863,
-                      "src": "183:15:71"
+                      "src": "177:15:71"
                     },
                     "referencedDeclaration": 33863,
-                    "src": "183:15:71",
+                    "src": "177:15:71",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_GnosisSafeProxy_$33863",
                       "typeString": "contract GnosisSafeProxy"
@@ -238,10 +238,10 @@
                   "id": 34118,
                   "mutability": "mutable",
                   "name": "_singleton",
-                  "nameLocation": "223:10:71",
+                  "nameLocation": "216:10:71",
                   "nodeType": "VariableDeclaration",
                   "scope": 34125,
-                  "src": "215:18:71",
+                  "src": "208:18:71",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -252,7 +252,7 @@
                     "id": 34117,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "215:7:71",
+                    "src": "208:7:71",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -266,10 +266,10 @@
                   "id": 34120,
                   "mutability": "mutable",
                   "name": "initializer",
-                  "nameLocation": "259:11:71",
+                  "nameLocation": "251:11:71",
                   "nodeType": "VariableDeclaration",
                   "scope": 34125,
-                  "src": "244:26:71",
+                  "src": "236:26:71",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -280,7 +280,7 @@
                     "id": 34119,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "244:5:71",
+                    "src": "236:5:71",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -293,10 +293,10 @@
                   "id": 34122,
                   "mutability": "mutable",
                   "name": "saltNonce",
-                  "nameLocation": "289:9:71",
+                  "nameLocation": "280:9:71",
                   "nodeType": "VariableDeclaration",
                   "scope": 34125,
-                  "src": "281:17:71",
+                  "src": "272:17:71",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -307,7 +307,7 @@
                     "id": 34121,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "281:7:71",
+                    "src": "272:7:71",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -316,13 +316,13 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "172:133:71"
+              "src": "167:128:71"
             },
             "returnParameters": {
               "id": 34124,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "314:0:71"
+              "src": "304:0:71"
             },
             "scope": 34126,
             "stateMutability": "nonpayable",
@@ -340,7 +340,7 @@
           34126
         ],
         "name": "IProxyCreationCallback",
-        "nameLocation": "121:22:71",
+        "nameLocation": "117:22:71",
         "scope": 34127,
         "usedErrors": []
       }

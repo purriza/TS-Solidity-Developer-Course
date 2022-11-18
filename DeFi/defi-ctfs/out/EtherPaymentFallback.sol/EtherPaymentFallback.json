@@ -25,17 +25,17 @@
     }
   ],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50607a8061001e6000396000f3fe608060405236603f5760405134815233907f3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d9060200160405180910390a2005b600080fdfea2646970667358221220462664307aa2c22fdd436cd2e5cb3ac9bf2468a90b21083c0e61efc9b6365a7064736f6c634300080f0033",
-    "sourceMap": "221:252:60:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b50607a8061001e6000396000f3fe608060405236603f5760405134815233907f3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d9060200160405180910390a2005b600080fdfea2646970667358221220b2f262a06fb9d21b3cd9f29d4d09fa9ec2932603ad7663f07c8240b62c60746064736f6c634300080f0033",
+    "sourceMap": "216:245:60:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405236603f5760405134815233907f3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d9060200160405180910390a2005b600080fdfea2646970667358221220462664307aa2c22fdd436cd2e5cb3ac9bf2468a90b21083c0e61efc9b6365a7064736f6c634300080f0033",
-    "sourceMap": "221:252:60:-:0;;;;;;427:35;;452:9;160:25:123;;440:10:60;;427:35;;148:2:123;133:18;427:35:60;;;;;;;221:252;;;;",
+    "object": "0x608060405236603f5760405134815233907f3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d9060200160405180910390a2005b600080fdfea2646970667358221220b2f262a06fb9d21b3cd9f29d4d09fa9ec2932603ad7663f07c8240b62c60746064736f6c634300080f0033",
+    "sourceMap": "216:245:60:-:0;;;;;;417:35;;442:9;160:25:126;;430:10:60;;417:35;;148:2:126;133:18;417:35:60;;;;;;;216:245;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"SafeReceived\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"EtherPaymentFallback - A contract that has a fallback to accept ether payments\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/EtherPaymentFallback.sol\":\"EtherPaymentFallback\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/EtherPaymentFallback.sol\":{\"keccak256\":\"0x6b1a79c3b51bf7c2a042230d6477c995ee1d9d3486941d2480ed1a64459bd1a8\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://fa5274c73c02db43271ad19ea53f859e1bcdf73ac5fd8fed1fa9e114c8ec9c4d\",\"dweb:/ipfs/QmUKq9tFUA3jyfpjeN66BH1aCppqhDZUxsgAbUJUq42WYt\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"SafeReceived\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"EtherPaymentFallback - A contract that has a fallback to accept ether payments\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/EtherPaymentFallback.sol\":\"EtherPaymentFallback\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@safe/=lib/safe-contracts/\",\":@uniswapv2/=src/src-0_6_x/uniswapv2/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":safe-contracts/=lib/safe-contracts/contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/EtherPaymentFallback.sol\":{\"keccak256\":\"0x1a7928d29877da84a3d0df846d5cd933d48ee095c1bde0aa044e249b12e27a72\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://962fc098cfdd8a43cc7d294c1105718ea985cacf1172ea0426f7370e2096b830\",\"dweb:/ipfs/QmdZrxJ7dSWuTjbrN133YiRDLwYQr21zLr3CqWWtowY9Gu\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.15+commit.e14f2714"
@@ -106,10 +106,10 @@
     },
     "sources": {
       "lib/safe-contracts/contracts/common/EtherPaymentFallback.sol": {
-        "keccak256": "0x6b1a79c3b51bf7c2a042230d6477c995ee1d9d3486941d2480ed1a64459bd1a8",
+        "keccak256": "0x1a7928d29877da84a3d0df846d5cd933d48ee095c1bde0aa044e249b12e27a72",
         "urls": [
-          "bzz-raw://fa5274c73c02db43271ad19ea53f859e1bcdf73ac5fd8fed1fa9e114c8ec9c4d",
-          "dweb:/ipfs/QmUKq9tFUA3jyfpjeN66BH1aCppqhDZUxsgAbUJUq42WYt"
+          "bzz-raw://962fc098cfdd8a43cc7d294c1105718ea985cacf1172ea0426f7370e2096b830",
+          "dweb:/ipfs/QmdZrxJ7dSWuTjbrN133YiRDLwYQr21zLr3CqWWtowY9Gu"
         ],
         "license": "LGPL-3.0-only"
       }
@@ -125,12 +125,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "43:432:60",
+    "src": "42:420:60",
     "nodes": [
       {
         "id": 33538,
         "nodeType": "PragmaDirective",
-        "src": "43:31:60",
+        "src": "42:31:60",
         "nodes": [],
         "literals": [
           "solidity",
@@ -145,17 +145,17 @@
       {
         "id": 33558,
         "nodeType": "ContractDefinition",
-        "src": "221:252:60",
+        "src": "216:245:60",
         "nodes": [
           {
             "id": 33545,
             "nodeType": "EventDefinition",
-            "src": "258:58:60",
+            "src": "252:58:60",
             "nodes": [],
             "anonymous": false,
             "eventSelector": "3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
             "name": "SafeReceived",
-            "nameLocation": "264:12:60",
+            "nameLocation": "258:12:60",
             "parameters": {
               "id": 33544,
               "nodeType": "ParameterList",
@@ -166,10 +166,10 @@
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "293:6:60",
+                  "nameLocation": "287:6:60",
                   "nodeType": "VariableDeclaration",
                   "scope": 33545,
-                  "src": "277:22:60",
+                  "src": "271:22:60",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -180,7 +180,7 @@
                     "id": 33540,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "277:7:60",
+                    "src": "271:7:60",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -195,10 +195,10 @@
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "value",
-                  "nameLocation": "309:5:60",
+                  "nameLocation": "303:5:60",
                   "nodeType": "VariableDeclaration",
                   "scope": 33545,
-                  "src": "301:13:60",
+                  "src": "295:13:60",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -209,7 +209,7 @@
                     "id": 33542,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "301:7:60",
+                    "src": "295:7:60",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -218,18 +218,18 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "276:39:60"
+              "src": "270:39:60"
             }
           },
           {
             "id": 33557,
             "nodeType": "FunctionDefinition",
-            "src": "384:86:60",
+            "src": "375:84:60",
             "nodes": [],
             "body": {
               "id": 33556,
               "nodeType": "Block",
-              "src": "411:59:60",
+              "src": "402:57:60",
               "nodes": [],
               "statements": [
                 {
@@ -242,7 +242,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "440:3:60",
+                          "src": "430:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -255,7 +255,7 @@
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "440:10:60",
+                        "src": "430:10:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -268,7 +268,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -15,
-                          "src": "452:3:60",
+                          "src": "442:3:60",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -281,7 +281,7 @@
                         "lValueRequested": false,
                         "memberName": "value",
                         "nodeType": "MemberAccess",
-                        "src": "452:9:60",
+                        "src": "442:9:60",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -304,7 +304,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 33545,
-                      "src": "427:12:60",
+                      "src": "417:12:60",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
@@ -318,7 +318,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "427:35:60",
+                    "src": "417:35:60",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -327,14 +327,14 @@
                   },
                   "id": 33555,
                   "nodeType": "EmitStatement",
-                  "src": "422:40:60"
+                  "src": "412:40:60"
                 }
               ]
             },
             "documentation": {
               "id": 33546,
               "nodeType": "StructuredDocumentation",
-              "src": "324:54:60",
+              "src": "316:54:60",
               "text": "@dev Fallback function accepts Ether transactions."
             },
             "implemented": true,
@@ -346,13 +346,13 @@
               "id": 33547,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "391:2:60"
+              "src": "382:2:60"
             },
             "returnParameters": {
               "id": 33548,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "411:0:60"
+              "src": "402:0:60"
             },
             "scope": 33558,
             "stateMutability": "payable",
@@ -368,7 +368,7 @@
         "documentation": {
           "id": 33539,
           "nodeType": "StructuredDocumentation",
-          "src": "78:143:60",
+          "src": "75:141:60",
           "text": "@title EtherPaymentFallback - A contract that has a fallback to accept ether payments\n @author Richard Meissner - <richard@gnosis.pm>"
         },
         "fullyImplemented": true,
@@ -376,7 +376,7 @@
           33558
         ],
         "name": "EtherPaymentFallback",
-        "nameLocation": "230:20:60",
+        "nameLocation": "225:20:60",
         "scope": 33559,
         "usedErrors": []
       }
