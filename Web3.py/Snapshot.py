@@ -31,7 +31,7 @@ hasBoredApeYacht = set()
 for indexTokens in boredApeYachtIds:
 	hasBoredApeYacht.add(contract.functions.ownerOf(indexTokens).call(block_identifier=15882990))
 	
-print(hasBoredApeYacht)
+#print(hasBoredApeYacht)
 
 # Step 1: Set up the address database
 
@@ -57,15 +57,15 @@ print(hasBoredApeYacht)
 
 # Step 3: Save as CSV
 
-#self.data = defaultdict(hasBoredApeYacht)
+self.data = defaultdict(hasBoredApeYacht)
 
-#headers = ["NFT_id", "Address"]
-#new_df = pd.DataFrame(columns=headers)
+headers = ["NFT_id", "Address"]
+new_df = pd.DataFrame(columns=headers)
 
-#new_df["NFT_id"] = self.data[0]
-#new_df["Address"] = self.data[1]
+new_df["NFT_id"] = self.data[0]
+new_df["Address"] = self.data[1]
 
-#new_df.to_csv(r"./CSV/NFTOwners.csv", index=False)
+new_df.to_csv(r"./CSV/NFTOwners.csv", index=False)
 
 
 # In order to do the airdrop we should save the Merkle Tree (Optimism Airdrop)
